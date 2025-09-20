@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1400" />
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/wefont.css" rel="stylesheet">
+    <title></title>
+    <style type="text/css">
+      ul {list-style: none; margin: 0; padding: 0;}
+      table {border-collapse: collapse; border-spacing: 0;}
+      table th, strong {font-weight: normal;}
+      body {margin: 20px;}
+      h1 {margin: 0 0 10px 0; color: #000; font-size: 30px;  font-weight:700;}
+      a {text-decoration: none; color: #000;}
+      a:hover {text-decoration: underline;}
+      .list_w table {width: 100%; margin: 20px auto; border-top: solid 2px #555; border-collapse: collapse; border-spacing: 0; font-size: 13px; text-align: center;}
+      .list_w table tr:hover {background: #f3f3f3;}
+      .list_w table th {padding: 10px 0; border: solid 1px #ddd; background: #efefef; vertical-align: middle; font-weight: 400; font-size: 13px;}
+      .list_w table td {padding: 10px 3px; border: solid 1px #ccc; vertical-align: middle;}
+      .lastmdate {color: #1155cc;}
+      .stand_by {color: #777;}
+      .stop {color: #787878;}
+      .ing {color: blue;}
+      .bgo {text-align: left;}
+      .end {background: green; color: #fff;}
+      .end.else {background: #ff5400; color: #fff;}
+      .defer {color: red;}
+      .modify {color: #ff5400;}
+      .list_w table td.link, .list_w table td.td_url, .list_w table td.etc {text-align: left; padding-left: 10px;}
+      .ing_w {border: 1px solid #000; margin: 0 0 20px; padding: 5px 10px;}
+      .t_tit {margin: 20px 0 10px; font-size: 20px;}
+      .ing_w .inglist {}
+      .ing_w .inglist li {padding: 10px; border-bottom: 1px solid #999;}
+      .ing_w .inglist li:last-child {border-bottom: 0;}
+      .ing_w .inglist .date {font-weight: bold;}
+      .ing_w .inglist .text {}
+      .ing_w .inglist .text .ingtext {font-weight: bold;}
+      .guidelist {padding: 8px 0;}
+      .guidelist li {padding: 2px 10px;}
+      .alignleft {text-align: left; padding-left: 10px !important;}
+      .depth td {background: #003F88; color: #fff; text-align: center; font-size: 20px; padding: 10px;}
+      .dev_notice {border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 10px; margin: 30px 0;}
+    </style>
+    <script>
+      function procedure(w, h, url) {
+        cw = screen.availWidth; //화면 넓이
+        ch = screen.availHeight; //화면 높이
+        sw = w; //띄울 창의 넓이
+        sh = h; //띄울 창의 높이
+        ml = (cw - sw) / 2; //가운데 띄우기위한 창의 x위치
+        mt = (ch - sh) / 2; //가운데 띄우기위한 창의 y위치
+        test = window.open(url, "tst", "width=" + sw + ",height=" + sh + ",top=" + mt + ",left=" + ml + ",resizable=no,scrollbars=yes");
+      }
+    </script>
+  </head>
+  <body id="guide">
+    <!-- eniter wrap -->
+    <div id="guide_wrap">
+      <div class="header">
+        <h1>춘천속초선 스마트안전관리 통합관제시스템</h1>
+        <p>
+          End page :
+          <span class="curr_n"></span>
+          page / Total page :
+          <span class="total_n"></span>
+          page
+        </p>
+        <p>
+          진행율 :
+          <span class="per"></span>
+        </p>
+      </div>
+      <div class="list_w">
+        <table class="codinglist">
+          <colgroup>
+            <col width="3%" />
+            <col />
+            <col width="35%" />
+            <col width="8%" />
+            <col width="30%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>no.</th>
+              <th>filename/link</th>
+              <th>HTML 파일명</th>
+              <th>현황</th>
+              <th>전달사항</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="depth">
+              <td colspan="5">페이지</td>
+            </tr>
+            <tr>
+              <td class="no"></td>
+              <td class="link"><a href="totalmenu.html" target="_blank">전체메뉴</a></td>
+              <td class="td_url"></td>
+              <td class="work"></td>
+              <td class="bgo"></td>
+            </tr>
+            <tr>
+              <td class="no"></td>
+              <td class="link"><a href="folder.html" target="_blank">메뉴설정</a></td>
+              <td class="td_url"></td>
+              <td class="work"></td>
+              <td class="bgo"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        chkList();
+      });
+
+      function chkList() {
+        const trs = document.querySelectorAll(".codinglist tr");
+        const depthTrs = document.querySelectorAll(".codinglist tr.depth");
+        const tatal_n = trs.length - depthTrs.length - 1;
+        let curr_n = 0;
+
+        const todayObj = new Date();
+        let dd = todayObj.getDate();
+        let mm = todayObj.getMonth() + 1; // January is 0!
+        const yyyy = todayObj.getFullYear();
+
+        if (dd < 10) dd = "0" + dd;
+        if (mm < 10) mm = "0" + mm;
+        const today = `${yyyy}-${mm}-${dd}`;
+
+        // 상태 체크
+        trs.forEach(tr => {
+          const td = tr.querySelector("td.work");
+          if (!td) return;
+
+          if (td.classList.contains("end")) {
+            curr_n++;
+            td.textContent = "완료";
+          } else if (td.classList.contains("ing")) {
+            td.textContent = today + " 작업중";
+            td.classList.add("ing");
+          } else {
+            td.textContent = "대기중";
+            td.classList.add("stand_by");
+          }
+        });
+
+        // 번호 매기기
+        const trsWithoutDepth = Array.from(trs).filter(tr => !tr.classList.contains("depth"));
+        trsWithoutDepth.forEach((tr, index) => {
+          const noTd = tr.querySelector("td.no");
+          if (noTd) {
+            noTd.textContent = index;
+          }
+        });
+
+        // 링크 처리
+        document.querySelectorAll("td.link > a").forEach(a => {
+          const href = a.getAttribute("href");
+          const td = a.closest("td");
+          const nextTd = td.nextElementSibling;
+          if (!nextTd) return;
+
+          if (td.classList.contains("type2")) {
+            nextTd.insertAdjacentHTML("beforeend", `<a href="${href}">${href}</a>`);
+          } else {
+            nextTd.insertAdjacentHTML("beforeend", `<a href="${href}" target="_blank">${href}</a>`);
+          }
+        });
+
+        // 결과 표시
+        const totalEl = document.querySelector(".total_n");
+        if (totalEl) totalEl.textContent = tatal_n;
+
+        const currEl = document.querySelector(".curr_n");
+        if (currEl) currEl.textContent = curr_n;
+
+        const perEl = document.querySelector(".per");
+        if (perEl) perEl.textContent = Math.floor((curr_n / tatal_n) * 100) + "%";
+      }
+    </script>
+  </body>
+</html>

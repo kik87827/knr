@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": false,
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "liveServer.settings.port": 5503,
+  "editor.codeActionsOnSave": {}
+}
