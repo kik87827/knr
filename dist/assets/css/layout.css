@@ -1,0 +1,29 @@
+.global_menu_zone{}
+.global_contents_row{}
+.global_control_row{}
+.gc_items_list{}
+.gc_items_list > li{}
+.btn_textonly_node{}
+.btn_textonly_node:hover{}
+.global_menu_container{}
+.global_menu_container .panel_cols{}
+.gm_panel_top_row{}
+.gm_panel_category{}
+.gm_panel_middle_row{}
+.gm_menu_list{}
+.gm_menu_list > li{}
+.gm_menu_list > li:last-of-type{}
+.gm_one{}
+.gm_one:hover{}
+.gm_one:hover .text_node{}
+.gm_one .text_node{}
+.gm_two_wrap{}
+.gm_two_list{}
+.gm_two_list > li{}
+.gm_two_list > li:last-of-type{}
+.gm_two{}
+.gm_two .text_node{}
+.gm_two:hover{}
+.gm_two:hover .text_node{}
+.btn_fav{}
+.btn_fav.active{}
