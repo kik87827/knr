@@ -8,7 +8,7 @@
         <div class="folder_depth_wrap">
           <ul class="folder_depth_list">
             <li>
-              <div class="folder_depth_item">
+              <div class="folder_depth_item unfold"><!-- 펼친 상태 -->
                 <i class="ico">
                   <img src="./assets/images/ico_monitor.png" alt="" />
                 </i>
@@ -24,7 +24,7 @@
               <div class="folder_depth_wrap">
                 <ul class="folder_depth_list">
                   <li>
-                    <div class="folder_depth_item">
+                    <div class="folder_depth_item unfold"><!-- 펼친 상태 -->
                       <i class="ico">
                         <img src="./assets/images/ico_folder.png" alt="" />
                       </i>
@@ -39,7 +39,7 @@
                               <img src="./assets/images/ico_docu.png" alt="" />
                             </i>
                             <span class="text_node">공사개요</span>
-                            <button class="tree_shape"></button>
+                            <!-- <button class="tree_shape"></button> -->
                           </div>
                         </li>
                         <li>
@@ -48,7 +48,7 @@
                               <img src="./assets/images/ico_folderplus.png" alt="" />
                             </i>
                             <span class="text_node">안전관리체계</span>
-                            <button class="tree_shape"></button>
+                            <!-- <button class="tree_shape"></button> -->
                           </div>
                         </li>
                         <li>
@@ -60,7 +60,7 @@
                           </div>
                         </li>
                         <li>
-                          <div class="folder_depth_item">
+                          <div class="folder_depth_item unfold"><!-- 펼친 상태 -->
                             <i class="ico">
                               <img src="./assets/images/ico_folder.png" alt="" />
                             </i>
@@ -136,7 +136,7 @@
                     </div>
                   </li>
                   <li>
-                    <div class="folder_depth_item">
+                    <div class="folder_depth_item unfold"><!-- 펼친 상태 -->
                       <i class="ico">
                         <img src="./assets/images/ico_folder.png" alt="" />
                       </i>
@@ -151,7 +151,6 @@
                               <img src="./assets/images/ico_docu.png" alt="" />
                             </i>
                             <span class="text_node">공사개요</span>
-                            <button class="tree_shape"></button>
                           </div>
                         </li>
                         <li>
@@ -160,7 +159,6 @@
                               <img src="./assets/images/ico_folderplus.png" alt="" />
                             </i>
                             <span class="text_node">안전관리체계</span>
-                            <button class="tree_shape"></button>
                           </div>
                         </li>
                         <li>
@@ -179,60 +177,62 @@
                             <span class="text_node">발주자안전책무</span>
                             <button class="tree_shape"></button>
                           </div>
-                          <ul class="folder_depth_list">
-                            <li>
-                              <div class="folder_depth_item">
-                                <i class="ico">
-                                  <img src="./assets/images/ico_docu.png" alt="" />
-                                </i>
-                                <span class="text_node">기본안전보건대장</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="folder_depth_item">
-                                <i class="ico">
-                                  <img src="./assets/images/ico_docu.png" alt="" />
-                                </i>
-                                <span class="text_node">설계안전보건대장</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="folder_depth_item">
-                                <i class="ico">
-                                  <img src="./assets/images/ico_docu.png" alt="" />
-                                </i>
-                                <span class="text_node">공사안전보건대장</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="folder_depth_item">
-                                <i class="ico">
-                                  <img src="./assets/images/ico_docu.png" alt="" />
-                                </i>
-                                <span class="text_node">공사안전보건대장 이행점검</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="folder_depth_item">
-                                <i class="ico">
-                                  <img src="./assets/images/ico_docu.png" alt="" />
-                                </i>
-                                <div class="folder_edit">
-                                  <input type="text" class="input_edit" value="관리" />
-                                  <button class="btn_edit_reset"></button>
+                          <div class="folder_depth_wrap" style="display:none">
+                            <ul class="folder_depth_list">
+                              <li>
+                                <div class="folder_depth_item">
+                                  <i class="ico">
+                                    <img src="./assets/images/ico_docu.png" alt="" />
+                                  </i>
+                                  <span class="text_node">기본안전보건대장</span>
                                 </div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="folder_depth_item">
-                                <i class="ico">
-                                  <img src="./assets/images/ico_docu_warn.png" alt="" />
-                                </i>
-                                <span class="text_node">설계안전성검토</span>
-                                <button class="btn_folder_del"></button>
-                              </div>
-                            </li>
-                          </ul>
+                              </li>
+                              <li>
+                                <div class="folder_depth_item">
+                                  <i class="ico">
+                                    <img src="./assets/images/ico_docu.png" alt="" />
+                                  </i>
+                                  <span class="text_node">설계안전보건대장</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="folder_depth_item">
+                                  <i class="ico">
+                                    <img src="./assets/images/ico_docu.png" alt="" />
+                                  </i>
+                                  <span class="text_node">공사안전보건대장</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="folder_depth_item">
+                                  <i class="ico">
+                                    <img src="./assets/images/ico_docu.png" alt="" />
+                                  </i>
+                                  <span class="text_node">공사안전보건대장 이행점검</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="folder_depth_item">
+                                  <i class="ico">
+                                    <img src="./assets/images/ico_docu.png" alt="" />
+                                  </i>
+                                  <div class="folder_edit">
+                                    <input type="text" class="input_edit" value="관리" />
+                                    <button class="btn_edit_reset"></button>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="folder_depth_item">
+                                  <i class="ico">
+                                    <img src="./assets/images/ico_docu_warn.png" alt="" />
+                                  </i>
+                                  <span class="text_node">설계안전성검토</span>
+                                  <button class="btn_folder_del"></button>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
                         </li>
                         <li>
                           <div class="folder_depth_item">
