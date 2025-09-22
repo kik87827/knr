@@ -28,5 +28,6 @@
 .global_menu_zone .gm_two:hover .text_node{}
 .global_menu_zone .gm_two:hover .btn_fav{display:inline-block;}
 .global_menu_zone .btn_fav{display:none;width:24px;height:24px;background:url("../images/ico_favstar.png") no-repeat 0 0/100% auto;}
-.global_menu_zone .btn_fav.active{background-position:0 100%;}
+.global_menu_zone .gm_one.fav_active .btn_fav,
+.global_menu_zone .gm_two.fav_active .btn_fav{background-position:0 100%;display:block;}
 
