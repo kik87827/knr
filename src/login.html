@@ -10,8 +10,8 @@
       <main class="login_middle">
         <div class="copy_cols">
           <div class="login_copy_group">
-            <p class="login_main_copy">국민을 위한 철도, 세계를 여는 KR</p>
-            <p class="login_sub_copy">
+            <p class="login_sub_copy">국민을 위한 철도, 세계를 여는 KR</p>
+            <p class="login_main_copy">
               스마트 안전관리
               <br />
               통합 서비스
@@ -42,7 +42,9 @@
                   <div class="form_row">
                     <div class="boxform_input_wrap">
                       <input type="password" class="boxform_input" placeholder="비밀번호를 입력하세요" />
-                      <button class="btn_role shape_eye"></button>
+                      <div class="btn_role_wrap">
+                        <button class="btn_role shape_eye"></button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -79,5 +81,25 @@
       </div>
     </div>
     <!-- // login -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".boxform_input_wrap").forEach((boxform) => {
+          const eyebtn = boxform.querySelector(".btn_role.shape_eye");
+          const boxform_input = boxform.querySelector(".boxform_input");
+          // 비번
+          if (!!eyebtn) {
+            eyebtn.addEventListener("click", (e) => {
+              const etarget = e.currentTarget;
+              etarget.classList.toggle("active");
+              if (etarget.classList.contains("active")) {
+                boxform_input.setAttribute("type", "password");
+              } else {
+                boxform_input.setAttribute("type", "text");
+              }
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
