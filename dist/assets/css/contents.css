@@ -48,3 +48,53 @@
 .folder_ui_zone > .folder_depth_wrap > .folder_depth_list > li > .folder_depth_wrap > .folder_depth_list > li:before{height:calc(100% - 34px);}
 /* .folder_ui_zone > .folder_depth_wrap > .folder_depth_list > li > .folder_depth_wrap > .folder_depth_list > li:last-of-type:before{display:block;} */
 /* // 메뉴설정 */
+
+
+/* login */
+.login_page{}
+.reader_node{}
+.login_header{}
+.login_header .toplogo{}
+.login_middle{}
+.login_middle .copy_cols{}
+.login_middle .form_cols{}
+.login_copy_group{}
+.login_main_copy{}
+.login_sub_copy{}
+.login_box_container{}
+.login_title_row{}
+.login_title{}
+.login_contents{}
+.login_form_wrap{}
+.login_form_block{}
+.login_form_block:last-of-type{}
+.login_form_block .label_row{}
+.login_form_block .label_text_node{}
+.login_form_block .form_row{}
+.boxform_input_wrap{}
+.boxform_input_wrap .btn_role{}
+input.boxform_input{}
+.btn_role{}
+.btn_role.shape_eye{}
+.warn_para_wrap{}
+.warn_para{}
+.warn_para .ico{}
+.warn_para .text_node{}
+.login_etc_wrap{}
+.etc_left_cols{}
+.etc_right_cols{}
+.props_item{}
+input.props_dom{}
+.props_label{}
+.menu_slice_list{}
+.menu_slice_list > li{}
+.menu_slice_list > li:after{}
+.menu_slice_list > li:last-of-type{}
+.menu_slice_list > li:last-of-type:after{}
+.menu_slice_item{}
+
+.login_btn_wrap{}
+.login_btn_wrap .warn_para_wrap{}
+.btn_submit_box{}
+.btn_submit_box .text_node{}
+/* // login */
