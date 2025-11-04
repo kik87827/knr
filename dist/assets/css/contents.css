@@ -130,3 +130,174 @@ input.props_dom:checked + .props_label{}
      .login_middle .form_cols{flex:0 0 624px;}
 }
 /* // login */
+
+
+/* contents */
+.contents_title_row{font-family: 'Pretendard';display:flex;justify-content: space-between;gap:20px;align-items: center;margin:10px 0 20px;}
+.contents_title_row .main_cols{display:flex;align-items: flex-end;gap:30px;}
+.contents_title_row .sub_cols{}
+.contents_title{margin:0;padding:0;font-size:20px; color:#2b2b2b;line-height:1.3;}
+.contents_title_copy{margin:0;padding:0; font-size:12px; font-weight:300; color:#6d6c6c; position:relative; top:-1px}
+.breadcrumb_list{margin:0;padding:0;list-style:none;display:flex;justify-content: flex-end; align-items: center;font-size:0;line-height:0;}
+.breadcrumb_list > li{padding-right:18px;position:relative;}
+.breadcrumb_list > li:after{}
+.breadcrumb_list > li:last-of-type{padding-right:0;}
+.breadcrumb_list > li:last-of-type:after{}
+.breadcrumb_item_home{display:inline-block; position:relative; top:-2px; width:16px;height:16px;text-decoration: none;font-size:0;line-height:0;}
+.breadcrumb_item_home img{max-width:100%;vertical-align: middle;}
+.breadcrumb_text_node{font-size:13px;color:#606060; text-decoration: none; display:inline-block;}
+.breadcrumb_text_node.highlight{}
+.contents_box_container{
+    border:1px solid rgb(219, 224, 232); font-family: 'Pretendard';
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px 0px rgba(84, 107, 104, 0.16);
+}
+.cbox_block_row{margin-bottom:30px;}
+.cbox_block_row:last-of-type{margin-bottom:0}
+.cbox_title_row{}
+.cbox_title_row .main_cols{}
+.cbox_title_row .sub_cols{}
+.cbox_title_item{}
+.cbox_title{}
+.btn_tooltip{}
+.tooltip_layer{}
+.tooltip_pointer{}
+.tooltip_layer_inner{}
+.ico_multi_wrap{}
+.ico_reload{}
+.ico_label_para{}
+.inline_item_group{}
+.inline_item{}
+.inline_item:last-of-type{}
+.inline_form_label{}
+select.form_select{}
+.cbox_contents{}
+.cgrid_box_container{}
+.cgrid_box{}
+.cgrid_box.grow{}
+.cgrid_box.basis{}
+.cgrid_inner{}
+.cgrid_title{}
+.box_divide_item{}
+.box_divide_item.full{}
+.box_divide_item .title_row{}
+.box_divide_title{}
+.box_divide_title .down_text{}
+.box_divide_item .contents_row{}
+.box_divide_block{}
+.box_divide_block:last-of-type{}
+.box_divide_block .title_row{}
+.box_divide_block .contents_row{}
+.count_render_wrap{}
+.count_render_item{}
+.count_render_item .count_node{}
+.count_render_item .count_node.highlight{}
+.count_render_item .count_unit{}
+.count_render_part{}
+.count_block_list{}
+.count_block_list > li{}
+.count_block_list > li:last-of-type{}
+.count_block_item{}
+.count_block_item .key_cols{}
+.count_block_item .value_cols{}
+.count_key_node{}
+.count_value_item{}
+.count_value_item .count_node{}
+.count_value_item .count_unit{}
+
+.count_block_item.red_skin .count_key_node{}
+.count_block_item.red_skin .count_node{}
+
+.count_block_item.green_skin .count_key_node{}
+.count_block_item.green_skin .count_node{}
+
+.horizontal_chart_container{}
+.horizontal_chart_container .render_cols{}
+.horizontal_chart_container .guide_cols{}
+.bar_chart_wrap{}
+.bar_chart{}
+.bar_value{}
+.chart_legend_list{}
+.chart_legend_list > li{}
+.chart_legend_list > li:last-of-type{}
+.chart_legend_group{}
+.chart_legend_group .main_cols{}
+.chart_legend_group .sub_cols{}
+.chart_legend_item{}
+.chart_legend_item .legend_dot{}
+.chart_legend_item .legend_text_node{}
+.inline_value_group{}
+.inline_value_item{}
+.inline_value_part{}
+
+.shape_chart_container{}
+.shape_chart_container .render_cols{}
+.shape_chart_container .value_cols{}
+.half_circle_chart{}
+.half_circle_chart img{}
+.number_value_item{}
+.number_value_item .number_node{}
+.number_value_item .number_unit{}
+
+.info_obj_list{}
+.info_obj_list > li{}
+.info_obj_list > li:last-of-type{}
+.info_obj_item{}
+.info_obj_item .key_cols{}
+.info_obj_item .value_cols{}
+.info_obj_item .number_value_item{}
+.info_obj_item .number_node{}
+.info_obj_item .number_unit{}
+.info_keynode_wrap{}
+.info_keynode_wrap .ico{}
+.info_keynode_wrap .ico.shape_up{}
+.info_keynode_wrap .ico.shape_down{}
+.info_keynode_wrap .text_node{}
+.info_keynode_wrap .text_node strong{}
+.info_note_wrap{}
+.info_note_para{}
+.boxtab_wrap{}
+.boxtab_list{}
+.boxtab_list > li{}
+.boxtab{}
+.boxtab.active{}
+.boxtab_cont_group{}
+.boxtab_cont{display:none;}
+.boxtab_cont.active{display:block;}
+.rank_info_list{}
+.rank_info_list > li{}
+.rank_info_list > li:last-of-type{}
+.rank_info_item{}
+.rank_number{}
+.rank_liquid{}
+.worker_item_wrap{}
+.worker_item_list{}
+.worker_item_list > li{}
+.worker_item{}
+.worker_item .hover_layer{}
+.worker_item .hover_layer .btn_role{}
+.worker_item.state_theme{}
+.worker_item.state_theme .men_shape_text{}
+.worker_item.state_theme .men_shape_text .main_node{}
+.worker_item.state_theme .men_shape_text .unit_node{}
+.worker_item.state_theme .current_stamp{}
+.btn_role{}
+.btn_role.primary{}
+.worker_text_group{}
+.worker_main_text{}
+.worker_sub_slice_list{}
+.worker_sub_slice_list > li{}
+.worker_sub_slice_list > li:last-of-type{}
+.worker_sub_slice{}
+.worker_shape_container{}
+.men_shape_chart{}
+.men_shape_chart:after{}
+.men_shape_value{}
+.men_shape_text{}
+.men_shape_text .main_node{}
+.men_shape_text .unit_node{}
+.current_stamp_item_cols{}
+.current_stamp{}
+.current_stamp .text_node{}
+/* // contents */

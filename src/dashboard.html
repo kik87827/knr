@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ko">
+  @@include('./include/_head.html')
+  <body style="background: #ecf3f2">
+    <div style="display: flex; flex-direction: column; min-height: 100vh">
+      <div style="background: #29303d; height: 114px; flex: 0 0 114px"></div>
+      <div style="flex: 1; padding: 20px 35px; display: flex; gap: 27px">
+        <div style="background: #fff; flex: 0 0 280px; border-radius: 10px; box-shadow: 0px 2px 5px 0px rgba(84, 107, 104, 0.16); border: 1px solid rgb(219, 224, 232)"></div>
+        <div style="flex: 1">
+          <!-- contents -->
+          <div class="contents_title_row">
+            <div class="main_cols">
+              <h2 class="contents_title">사고예측관리</h2>
+              <p class="contents_title_copy">현장에 등록된 모든 근로자들의 위험도를 분석하여, 사고를 예측, 관리합니다.</p>
+            </div>
+            <div class="sub_cols">
+              <ul class="breadcrumb_list">
+                <li>
+                  <a href="#" class="breadcrumb_item_home"><img src="./assets/images/system/ico_home.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="breadcrumb_text_node">안전계획</a></li>
+                <li><a href="#" class="breadcrumb_text_node">발주자안전책무</a></li>
+                <li><a href="#" class="breadcrumb_text_node highlight">안전관리계획 이행점검</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="contents_box_container">
+            <div class="cbox_block_row">
+              <div class="cbox_title_row">
+                <div class="main_cols">
+                  <div class="cbox_title_item">
+                    <h3 class="cbox_title">위험도 분석</h3>
+                    <button class="btn_tooltip" data-target="tooltip_item_01"></button>
+                  </div>
+                  <div class="ico_multi_wrap">
+                    <button class="ico_reload"></button>
+                    <p class="ico_label_para">2025년 10월 30일 19:04 기준</p>
+                  </div>
+                </div>
+                <div class="sub_cols">
+                  <div class="inline_item_group">
+                    <div class="inline_item"><p class="inline_form_label">현장을 선택하세요</p></div>
+                    <div class="inline_item">
+                      <select class="form_select">
+                        <option>현장 전체</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="tooltip_layer" id="tooltip_item_01">
+                  <span class="tooltip_pointer"></span>
+                  <div class="tooltip_layer_inner">모든 위험도는 1시간마다 갱신됩니다. 화면 새로 고침 시나, 타 현장을 선택할 경우 새로 반영됩니다.</div>
+                </div>
+              </div>
+              <div class="cbox_contents">
+                <div class="cgrid_box_container">
+                  <div class="cgrid_box grow">
+                    <div class="box_divide_item">
+                      <div class="title_row"><p class="box_divide_title">오늘 출역 / 총 근로자</p></div>
+                      <div class="contents_row">
+                        <div class="count_render_wrap">
+                          <div clss="count_render_item">
+                            <strong class="count_node highlight">59</strong>
+                            <strong class="count_unit">명</strong>
+                          </div>
+                          <div clss="count_render_part">/</div>
+                          <div clss="count_render_item">
+                            <strong class="count_node">217</strong>
+                            <strong class="count_unit">명</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box_divide_item">
+                      <div class="title_row"><p class="box_divide_title">근로자 최고, 평균 위험도</p></div>
+                      <div class="contents_row">
+                        <ul class="count_block_list">
+                          <li>
+                            <div class="count_block_item red_skin">
+                              <div class="key_cols"><span class="count_key_node">최고</span></div>
+                              <div class="value_cols">
+                                <div clss="count_value_item">
+                                  <strong class="count_node">20.33</strong>
+                                  <strong class="count_unit">%</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="count_block_item green_skin">
+                              <div class="key_cols"><span class="count_key_node">평균</span></div>
+                              <div class="value_cols">
+                                <div clss="count_value_item">
+                                  <strong class="count_node">5.33</strong>
+                                  <strong class="count_unit">%</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="box_divide_item full">
+                      <div class="title_row">
+                        <p class="box_divide_title">
+                          근로자 위험 분포
+                          <span class="down_text">(명/%)</span>
+                        </p>
+                      </div>
+                      <div class="contents_row">
+                        <div class="horizontal_chart_container">
+                          <div class="render_cols">
+                            <div class="bar_chart_wrap">
+                              <div class="bar_chart">
+                                <div class="bar_value" style="width: 75%; background-color: #34be74"></div>
+                                <div class="bar_value" style="width: 15%; background-color: #ff7f29"></div>
+                                <div class="bar_value" style="width: 10%; background-color: #f74e4e"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="guide_cols">
+                            <ul class="chart_legend_list">
+                              <li>
+                                <div class="chart_legend_group">
+                                  <div class="main_cols">
+                                    <div class="chart_legend_item">
+                                      <span class="legend_dot" style="background-color: #34be74"></span>
+                                      <span class="legend_text_node" style="color: #34be74">정상</span>
+                                    </div>
+                                  </div>
+                                  <div class="sub_cols">
+                                    <div class="inline_value_group">
+                                      <div class="inline_value_item">67명</div>
+                                      <div class="inline_value_part">/</div>
+                                      <div class="inline_value_item">75%</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="chart_legend_group">
+                                  <div class="main_cols">
+                                    <div class="chart_legend_item">
+                                      <span class="legend_dot" style="background-color: #ff7f29"></span>
+                                      <span class="legend_text_node" style="color: #ff7f29">주의</span>
+                                    </div>
+                                  </div>
+                                  <div class="sub_cols">
+                                    <div class="inline_value_group">
+                                      <div class="inline_value_item">17명</div>
+                                      <div class="inline_value_part">/</div>
+                                      <div class="inline_value_item">15%</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="chart_legend_group">
+                                  <div class="main_cols">
+                                    <div class="chart_legend_item">
+                                      <span class="legend_dot" style="background-color: #f74e4e"></span>
+                                      <span class="legend_text_node" style="color: #f74e4e">위험</span>
+                                    </div>
+                                  </div>
+                                  <div class="sub_cols">
+                                    <div class="inline_value_group">
+                                      <div class="inline_value_item">7명</div>
+                                      <div class="inline_value_part">/</div>
+                                      <div class="inline_value_item">10%</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cgrid_box basis">
+                    <div class="box_divide_block">
+                      <div class="title_row"><p class="box_divide_title">현장 현재 위험도</p></div>
+                      <div class="contents_row">
+                        <div class="shape_chart_container">
+                          <div class="render_cols">
+                            <div class="half_circle_chart">
+                              <img src="./assets/images/system/half_circle.png" alt="" />
+                            </div>
+                          </div>
+                          <div class="value_cols">
+                            <div clss="number_value_item">
+                              <strong class="number_node">9.02</strong>
+                              <strong class="number_unit">%</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box_divide_block">
+                      <ul class="info_obj_list">
+                        <li>
+                          <div class="info_obj_item">
+                            <div class="key_cols">
+                              <div class="info_keynode_wrap">
+                                <span class="ico shape_up"></span>
+                                <span class="text_node">
+                                  <strong style="color: #f74e4e">최고</strong>
+                                  위험도
+                                </span>
+                              </div>
+                            </div>
+                            <div class="value_cols">
+                              <div clss="number_value_item">
+                                <strong class="number_node" style="color: #f74e4e">33.28</strong>
+                                <strong class="number_unit">%</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="info_obj_item">
+                            <div class="key_cols">
+                              <div class="info_keynode_wrap">
+                                <span class="ico shape_down"></span>
+                                <span class="text_node">
+                                  <strong style="color: #3795ec">최저</strong>
+                                  위험도
+                                </span>
+                              </div>
+                            </div>
+                            <div class="value_cols">
+                              <div clss="number_value_item">
+                                <strong class="number_node" style="color: #3795ec">0.68</strong>
+                                <strong class="number_unit">%</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="info_note_wrap">
+                        <p class="info_note_para">차이 : 3.21</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cgrid_box basis">
+                    <div class="cgrid_inner">
+                      <h3 class="cgrid_title">위험도 TOP3</h3>
+                      <div class="boxtab_wrap">
+                        <ul class="boxtab_list">
+                          <li><a href="#tabcont_01" class="boxtab active">회사별</a></li>
+                          <li><a href="#tabcont_02" class="boxtab">위험작업</a></li>
+                          <li><a href="#tabcont_03" class="boxtab">작업위치</a></li>
+                        </ul>
+                      </div>
+                      <div class="boxtab_cont_group">
+                        <div class="boxtab_cont active" id="tabcont_01">
+                          <ul class="rank_info_list">
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">1</span>
+                                <span class="rank_liquid">디에스 해체산업㈜</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">2</span>
+                                <span class="rank_liquid">㈜예다지도어</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">3</span>
+                                <span class="rank_liquid">서남해안기업도시개발㈜</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="boxtab_cont" id="tabcont_02">
+                          <ul class="rank_info_list">
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">1</span>
+                                <span class="rank_liquid">디에스 해체산업㈜ 02</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">2</span>
+                                <span class="rank_liquid">㈜예다지도어</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">3</span>
+                                <span class="rank_liquid">서남해안기업도시개발㈜</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="boxtab_cont" id="tabcont_03">
+                          <ul class="rank_info_list">
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">1</span>
+                                <span class="rank_liquid">디에스 해체산업㈜ 03</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">2</span>
+                                <span class="rank_liquid">㈜예다지도어</span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="rank_info_item">
+                                <span class="rank_number">3</span>
+                                <span class="rank_liquid">서남해안기업도시개발㈜</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cbox_block_row">
+              <div class="cbox_title_row">
+                <div class="main_cols">
+                  <div class="cbox_title_item">
+                    <h3 class="cbox_title">근로자 리스트</h3>
+                    <button class="btn_tooltip" data-target="tooltip_item_02"></button>
+                  </div>
+                  <ul class="legend_info_list">
+                    <li>
+                      <div class="chart_legend_group">
+                        <div class="main_cols">
+                          <div class="chart_legend_item">
+                            <span class="legend_dot" style="background-color: #34be74"></span>
+                            <span class="legend_text_node" style="color: #34be74">정상</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart_legend_group">
+                        <div class="main_cols">
+                          <div class="chart_legend_item">
+                            <span class="legend_dot" style="background-color: #ff7f29"></span>
+                            <span class="legend_text_node" style="color: #ff7f29">주의</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart_legend_group">
+                        <div class="main_cols">
+                          <div class="chart_legend_item">
+                            <span class="legend_dot" style="background-color: #f74e4e"></span>
+                            <span class="legend_text_node" style="color: #f74e4e">위험</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub_cols">
+                  <div class="inline_item_group">
+                    <div class="inline_item">
+                      <select class="form_select">
+                        <option>전체</option>
+                      </select>
+                    </div>
+                    <div class="inline_item">
+                      <select class="form_select">
+                        <option>전체</option>
+                      </select>
+                    </div>
+                    <div class="inline_item">
+                      <select class="form_select">
+                        <option>오늘</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="tooltip_layer" id="tooltip_item_02">
+                  <span class="tooltip_pointer"></span>
+                  <div class="tooltip_layer_inner">등록된 근로자 목록입니다. 자세히를 눌러 상세로 이동 하거나, 안전점검으로 이동하여 위험도를 감소시킬 수 있습니다.</div>
+                </div>
+              </div>
+              <div class="cbox_contents">
+                <div class="worker_item_wrap">
+                  <ul class="worker_item_list">
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #f74e4e"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">장성국</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #f74e4e"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">장성국</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #ff7f29"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">고성만중국상</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #34be74"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #f74e4e"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">장성국</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #f74e4e"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">장성국</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #ff7f29"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">고성만중국상</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 83.15%; background: #34be74"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">83.15</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="worker_item state_theme">
+                        <div class="worker_text_group">
+                          <p class="worker_main_text">김근로</p>
+                          <ul class="worker_sub_slice_list">
+                            <li><span class="worker_sub_slice">남 36세</span></li>
+                            <li><span class="worker_sub_slice">대한민국</span></li>
+                          </ul>
+                        </div>
+                        <div class="worker_shape_container">
+                          <div class="men_shape_chart">
+                            <div class="men_shape_value" style="height: 52.3%"></div>
+                            <div class="men_shape_text">
+                              <span class="main_node">52.3</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                          <div class="current_stamp_item_cols">
+                            <div class="current_stamp"><span class="text_node">출역</span></div>
+                          </div>
+                        </div>
+                        <div class="hover_layer">
+                          <button class="btn_role">안전점검</button>
+                          <button class="btn_role primary">자세히</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- // contents -->
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {});
+    </script>
+  </body>
+</html>
