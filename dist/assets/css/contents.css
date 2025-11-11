@@ -383,4 +383,305 @@ outline-offset: -5px;
 .current_stamp_item_cols{}
 .current_stamp{width:33px;height:33px;border:1px solid #176bdd; display:flex; justify-content: center; align-items: center;border-radius:100%;transform: rotate(-15deg);}
 .current_stamp .text_node{display:inline-block; color:#176bdd; font-size:13px; color:#176bdd; line-height:1;}
+
+/* dashboard 251111 */
+.dashboard_container{}
+.dashboard_main_cols{}
+.dashboard_main_cols .brick_box{}
+.dashboard_sub_cols{}
+
+.rating_flag{}
+.rating_flag.green_gd{}
+.rating_flag.light_green_gd{}
+.rating_flag.light_orange_gd{}
+.rating_flag.red_gd{}
+.rating_flag.yellow_gd{}
+
+select.dash_select{}
+
+/* map */
+.area_map_render{}
+.area_bg_img{}
+.area_bg_img > img{}
+.area_section_group{}
+.area_section_list{}
+.area_section_list > li{}
+.area_section_list > li.ing{}
+.area_section_list > li.area_1{}
+.area_section_list > li.area_2{}
+.area_section_list > li.area_3{}
+.area_section_list > li.area_4{}
+.area_section_list > li.area_5{}
+.area_section_list > li.area_6{}
+.area_section_list > li.area_7{}
+.area_section_list > li.area_8{}
+
+.area_dot{}
+.area_marker_text{}
+.area_marker_line{}
+.area_danger_item{}
+.area_danger_item > img{}
+.area_maker_shape{}
+.area_maker_item_wrap{}
+.area_marker_item{}
+.area_marker_item > img{}
+.area_info_text_group{}
+.area_info_text{}
+
+.area_word_balloon_layer{}
+.area_word_balloon_layer > .title_row{}
+.area_word_balloon_layer > .contents_row{}
+.area_title_node{}
+.else_item_group{}
+.area_word_balloon_layer .rating_flag{}
+
+.area_word_balloon_layer .value_unit_item{}
+.area_word_balloon_layer .value_unit_item > .value_node{}
+.area_word_balloon_layer .value_unit_item > .unit_node{}
+.area_word_balloon_layer:after{}
+.area_word_balloon_layer.right_pos{}
+.area_word_balloon_layer.right_pos:after{}
+
+.spec_display_list{}
+.spec_display_list > li{}
+.spec_display_list > li:last-of-type{}
+
+.spec_display_item{}
+.spec_display_item dt, .spec_display_item dd{}
+.spec_display_item dt{}
+.spec_display_item dd{}
+.spec_display_item .spec_key_node{}
+.spec_display_item .spec_value_node{}
+.spec_display_item .spec_value_node.highlight{}
+/* // map */
+
+.brick_block_wrap{}
+.brick_block_wrap .brick_box{}
+.brick_block_wrap .brick_box:last-of-type{}
+.brick_both_wrap{}
+.brick_both_wrap .brick_box{}
+.brick_box{}
+.brick_title_row{}
+.brick_title_row .else_cols_wrap{}
+.brick_title_row .else_cols_wrap .dash_select{}
+.brick_title_row .else_cols_wrap .brick_title_note{}
+.brick_title{}
+.brick_contents{}
+.brick_box.liquid{}
+.brick_box.liquid .brick_title_row{}
+.brick_box.liquid .brick_title{}
+.brick_box.liquid .brick_contents{}
+
+.map_legend_box{}
+.map_legend_cols{}
+.map_legend_tb{}
+.map_legend_tb td{}
+.map_legend_tb td.has_ico{}
+.map_legend_tb td.has_flag{}
+.map_legend_tb td.has_flag .rating_flag{}
+.map_legend_tb td.has_summary{}
+.map_legend_tb td.has_keyword{}
+.map_legend_tb td.has_keyword.has_line{}
+.map_keyword{}
+.map_summary_group{}
+.map_summary_main{}
+.map_summary_sub{}
+
+.info_graphic_container{}
+.info_graphic_cols{}
+.info_graphic_title_row{}
+.info_graphic_title{}
+.info_graphic_contents{}
+.info_graphic_cell{}
+.info_graphic_cell.short{}
+.info_graphic_cell.has_chart{}
+.info_gracell_item{}
+.info_gracell_title_row{}
+.info_gracell_title{}
+.info_gracell_else_wrap{}
+.info_gracell_note_para{}
+.info_gracell_note_para strong{}
+.info_gracell_contents{}
+.info_gauge_container{}
+.info_gauge_container > .chart_cols{}
+.info_gauge_container > .legend_cols{}
+.gauge_bar_wrap{}
+.gauge_bar_wrap > .current_layer{}
+.gauge_bar_wrap > .current_layer.theme_purple{}
+.gauge_bar_wrap > .current_layer.theme_purple .gauge_current_value{}
+.gauge_bar_wrap > .current_layer.theme_purple .gauge_current_value > .text_node{}
+.gauge_bar_wrap > .current_layer.theme_pink{}
+.gauge_bar_wrap > .current_layer.theme_pink .gauge_current_value{}
+.gauge_bar_wrap > .current_layer.theme_pink .gauge_current_value > .text_node{}
+.gauge_current_value{}
+.gauge_current_value > .text_node{}
+.legend_dom_list{}
+.legend_dom_list > li{}
+.legend_dom_list > li:last-of-type{}
+.legend_dom_item{}
+.legend_dom_item dt,
+.legend_dom_item dd{}
+.legend_dom_item dt{}
+.legend_dom_item dd{}
+.legend_dom_item .legend_dot{}
+.legend_dom_item .text_node{}
+.legend_dom_item .value_text_node{}
+.legend_dom_item .value_text_node.highlight{}
+
+.btn_shape_more{}
+.btn_shape_more:before{}
+.btn_shape_more:after{}
+
+.snippet_mark_container{}
+.snippet_mark_container.highlight{}
+.snippet_mark_cols{}
+.snippet_mark{}
+.snippet_mark .text_node{}
+.snippet_copy_cols{}
+.snippet_copy_para{}
+.snippet_copy_para br{}
+
+.snippet_mark_container.highlight .snippet_mark{}
+.snippet_mark_container.highlight .snippet_mark .text_node{}
+.snippet_mark_container.highlight .snippet_copy_para{}
+
+.info_donut_container{}
+.info_donut_render{}
+.info_donut{}
+.info_donut_label{}
+.info_donut_legend_wrap{}
+.info_donut_legend_wrap .legend_dom_list{}
+
+.info_gra_block{}
+.info_gra_block:last-of-type{}
+.info_gblock_title_row{}
+.info_gblock_title{}
+.info_gracell_else_wrap{}
+.info_gracell_note_para{}
+.info_gracell_note_para strong{}
+.info_gblock_contents{}
+.info_gauge_tb{}
+.info_gauge_tb th,
+.info_gauge_tb td{}
+.info_gauge_tb th{}
+.info_gauge_tb td{}
+.info_gauge_thtext{}
+.info_tape_wrap{}
+.info_tape_current_value{}
+.info_tape_current_value .text_node{}
+.info_tape_wrap.theme_purple{}
+.info_tape_wrap.theme_purple .info_tape_current_value{}
+.info_tape_wrap.theme_purple .info_tape_current_value .text_node{}
+.info_tape_wrap.theme_pink{}
+.info_tape_wrap.theme_pink .info_tape_current_value{}
+.info_tape_wrap.theme_pink .info_tape_current_value .text_node{}
+
+.liner_chart_wrap{}
+.capsule_legend_wrap{}
+.capsule_legend_list{}
+.capsule_legend_list > li{}
+.capsule_legend_item{}
+.capsule_legend_item .dot_item{}
+.capsule_legend_item .text_node{}
+.capsule_legend_item.primary{}
+.capsule_legend_item.primary .dot_item{}
+.capsule_legend_item.primary .text_node{}
+
+.score_container{}
+.score_main_cols{}
+.score_hor_box{}
+.score_hor_cols{}
+.score_hor_cols .key_column{}
+.score_hor_cols .value_column{}
+.hor_label_text{}
+.hor_score_item{}
+.hor_score_item .number_node{}
+.hor_score_item .unit_node{}
+.score_sub_cols{}
+.hor_label_pod{}
+.score_sub_cols .hor_score_item .number_node{}
+.score_sub_cols .hor_score_item .unit_node{}
+
+.report_grid_container{}
+.report_grid_cols{}
+.report_grid_cols.primary{}
+.report_grid_cols .hover_layer{}
+.report_grid_cols:hover .hover_layer{}
+.report_grid_cols:hover .report_chip_obj dd .report_value_group{}
+.report_grid_cols:hover .report_chip_obj dd .report_number{}
+.report_grid_cols:hover .report_chip_obj dd .report_unit{}
+
+.report_primary_item{}
+.report_primary_item .ico{}
+.report_primary_item .ico.shape_report{}
+.report_value_obj{}
+.report_value_obj dt,
+.report_value_obj dd{}
+.report_keynode{}
+.report_value_group{}
+.report_number{}
+.report_unit{}
+
+.report_feature_list{}
+.report_feature_list > li{}
+.report_feature_list > li:last-of-type{}
+.report_feature_item{}
+.report_feature_item:after{}
+.report_feature_item .text_node{}
+.report_feature_item .text_node strong{}
+
+.report_chip_obj{}
+.report_chip_obj dt,
+.report_chip_obj dd{}
+.report_chip_obj dt{}
+.report_chip_obj dt .ico{}
+.report_chip_obj dt .ico.shape_work01{}
+.report_chip_obj dt .ico.shape_work02{}
+.report_chip_obj dt .ico.shape_work03{}
+.report_chip_obj dt .ico.shape_work04{}
+.report_chip_obj dt .ico.shape_work05{}
+.report_chip_obj dt .ico.shape_work06{}
+.report_chip_obj dt .ico.shape_work07{}
+.report_chip_obj dt .ico.shape_work08{}
+.report_chip_obj dt .ico.shape_work09{}
+.report_chip_obj dt .ico.shape_work10{}
+.report_chip_obj dt .ico.shape_work11{}
+.report_chip_obj dt .ico.shape_work12{}
+.report_chip_obj dt .ico.shape_work13{}
+.report_chip_obj dd{}
+.report_chip_obj dd .report_value_group{}
+.report_chip_obj dd .report_number{}
+.report_chip_obj dd .report_unit{}
+
+.mark_info_tb_wrap{}
+.mark_info_tb{}
+.mark_info_tb th{}
+.mark_info_tb th:last-of-type{}
+.mark_info_tb td{}
+.mark_info_tb td:last-of-type{}
+.mark_info_thtext{}
+.mark_info_list{}
+.mark_info_list > li{}
+.mark_info_item{}
+.mark_info_item .img_row{}
+.mark_info_item .img_row img{}
+.mark_info_item .spec_row{}
+.mark_info_text{}
+
+.mark_info_item.theme_green{}
+.mark_info_item.theme_green.highlight{}
+.mark_info_item.theme_green.highlight .mark_info_text{}
+
+.mark_info_item.theme_orange{}
+.mark_info_item.theme_orange.highlight{}
+.mark_info_item.theme_orange.highlight .mark_info_text{}
+
+.mark_info_item.theme_red{}
+.mark_info_item.theme_red.highlight{}
+.mark_info_item.theme_red.highlight .img_row{}
+.mark_info_item.theme_red.highlight .img_row img{}
+.mark_info_item.theme_red.highlight .mark_info_text{}
+
+/* // dashboard 251111 */
+
 /* // contents */
