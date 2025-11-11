@@ -16,7 +16,7 @@
 
 <body style="background: #15172c">
 	<div style="display: flex; flex-direction: column; min-height: 100vh">
-		<div style="background: #242a41; height: 98px; flex: 0 0 98px"></div>
+		<div style="background: #242a41; height: 98px; flex: 0 0 98px; display: flex; justify-content: center; align-items: center; color: #fff">Header</div>
 		<div style="flex: 1">
 			<!-- contents -->
 			<link href="./assets/css/dashboard.css" rel="stylesheet" />
@@ -805,7 +805,7 @@
 							</div>
 							<div class="brick_contents">
 								<div class="liner_chart_wrap">
-									<div style="background: #ccc; display: flex; justify-content: center; align-items: center; color: #000; font-size: 14px; height: 192px">차크 구현(개발팀)</div>
+									<div style="background: #304060; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 14px; height: 192px">차크 구현(개발팀)</div>
 								</div>
 								<div class="capsule_legend_wrap">
 									<ul class="capsule_legend_list">
@@ -874,7 +874,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="hor_cols">
+											<div class="score_hor_cols">
 												<div class="key_column">
 													<p class="hor_label_text">평균 위험도</p>
 												</div>
@@ -900,7 +900,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="hor_cols">
+											<div class="score_hor_cols">
 												<div class="key_column">
 													<p class="hor_label_pod">질환 근로자</p>
 												</div>
@@ -911,7 +911,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="hor_cols">
+											<div class="score_hor_cols">
 												<div class="key_column">
 													<p class="hor_label_pod">고령 근로자</p>
 												</div>
@@ -922,7 +922,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="hor_cols">
+											<div class="score_hor_cols">
 												<div class="key_column">
 													<p class="hor_label_pod">외국인 근로자</p>
 												</div>
@@ -945,511 +945,523 @@
 								<p class="brick_title">위험 작업 현황</p>
 							</div>
 							<div class="brick_contents">
-								<div class="report_grid_container">
-									<div class="report_grid_cols primary">
-										<div class="report_primary_item">
-											<i class="ico shape_report"></i>
-											<dl class="report_value_obj">
-												<dt><span class="report_keynode">총 발생 건</span></dt>
-												<dd>
-													<div class="report_value_group">
-														<span class="report_number">9</span>
-														<span class="report_unit">건</span>
-													</div>
-												</dd>
-											</dl>
-										</div>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work01"></i>
-												<span class="report_chip_keynode">절토·성토</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+								<div class="report_grid_tb_wrap">
+									<table class="report_grid_tb">
+										<tr>
+											<td colspan="2" class="primary">
+												<div class="report_primary_item">
+													<i class="ico"><img src="./assets/images/area/ico_total_count_36.png" alt="" /></i>
+													<dl class="report_value_obj">
+														<dt><span class="report_keynode">총 발생 건</span></dt>
+														<dd>
+															<div class="report_value_group">
+																<span class="report_number">9</span>
+																<span class="report_unit">건</span>
+															</div>
+														</dd>
+													</dl>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work02"></i>
-												<span class="report_chip_keynode">거더 설치</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_01.png" alt="" /></i>
+														<span class="report_chip_keynode">절토·성토</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work03"></i>
-												<span class="report_chip_keynode">발파·굴진</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_02.png" alt="" /></i>
+														<span class="report_chip_keynode">거더 설치</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work04"></i>
-												<span class="report_chip_keynode">숏크리트</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_03.png" alt="" /></i>
+														<span class="report_chip_keynode">발파·굴진</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work05"></i>
-												<span class="report_chip_keynode">골조·마감</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_04.png" alt="" /></i>
+														<span class="report_chip_keynode">숏크리트</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work06"></i>
-												<span class="report_chip_keynode">레일·침목 설치</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">2</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_05.png" alt="" /></i>
+														<span class="report_chip_keynode">골조·마감</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work07"></i>
-												<span class="report_chip_keynode">분기기 설치</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_06.png" alt="" /></i>
+														<span class="report_chip_keynode">레일·침목 설치</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">2</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work08"></i>
-												<span class="report_chip_keynode">급전선로 설치</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_07.png" alt="" /></i>
+														<span class="report_chip_keynode">분기기 설치</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work09"></i>
-												<span class="report_chip_keynode">변전설비 시공</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_08.png" alt="" /></i>
+														<span class="report_chip_keynode">급전선로 설치</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work10"></i>
-												<span class="report_chip_keynode">신호기기 설치</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_09.png" alt="" /></i>
+														<span class="report_chip_keynode">변전설비 시공</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work11"></i>
-												<span class="report_chip_keynode">케이블 포설</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_10.png" alt="" /></i>
+														<span class="report_chip_keynode">신호기기 설치</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work12"></i>
-												<span class="report_chip_keynode">방음벽 설치</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_11.png" alt="" /></i>
+														<span class="report_chip_keynode">케이블 포설</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
-														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="report_grid_cols">
-										<dl class="report_chip_obj">
-											<dt>
-												<i class="ico shape_work13"></i>
-												<span class="report_chip_keynode">연동시험</span>
-											</dt>
-											<dd>
-												<div class="report_value_group">
-													<span class="report_number">0</span>
-													<span class="report_unit">건</span>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
 												</div>
-											</dd>
-										</dl>
-										<div class="hover_layer">
-											<ul class="report_feature_list">
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제2공구</strong>
-															노반신설 기타공사
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_12.png" alt="" /></i>
+														<span class="report_chip_keynode">방음벽 설치</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="report_feature_item">
-														<div class="text_node">
-															춘천-속초 철도건설
-															<strong>제3공구</strong>
-															노반신설 기타공사
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<dl class="report_chip_obj">
+													<dt>
+														<i class="ico"><img src="./assets/images/area/ico_slice_count_13.png" alt="" /></i>
+														<span class="report_chip_keynode">연동시험</span>
+													</dt>
+													<dd>
+														<div class="report_value_group">
+															<span class="report_number">0</span>
+															<span class="report_unit">건</span>
 														</div>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
+													</dd>
+												</dl>
+												<div class="hover_layer">
+													<ul class="report_feature_list">
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제2공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+														<li>
+															<a href="#" class="report_feature_item">
+																<div class="text_node">
+																	춘천-속초 철도건설
+																	<strong>제3공구</strong>
+																	노반신설 기타공사
+																</div>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</td>
+										</tr>
+									</table>
 								</div>
 							</div>
 						</div>
