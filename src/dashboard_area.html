@@ -5,7 +5,7 @@
   <body style="background: #15172c">
     <div style="display: flex; flex-direction: column; min-height: 100vh">
       <div style="background: #242a41; height: 98px; flex: 0 0 98px; display: flex; justify-content: center; align-items: center; color: #fff">Header</div>
-      <div style="flex: 1">
+      <div style="flex: 1; display: flex; flex-direction: column">
         <!-- contents -->
         <link href="./assets/css/dashboard.css" rel="stylesheet" />
         <div class="dashboard_container">
@@ -19,29 +19,47 @@
                 <div class="area_map_render">
                   <div class="area_bg_img"><img src="./assets/images/area/img_area_mapx2.png" alt="" /></div>
                   <div class="area_section_group">
+                    <span class="area_dot pos1"></span>
+                    <span class="area_dot pos2"></span>
+                    <span class="area_dot pos3"></span>
+                    <span class="area_dot pos4"></span>
+                    <span class="area_dot pos5"></span>
+                    <span class="area_dot pos6"></span>
                     <div class="area_line line_num2">
-                      <img src="./assets/images/area/map_area2.svg" alt="" />
                       <a href="#" class="hit_event"></a>
+                      <img src="./assets/images/area/map_area2.svg" class="default" alt="" />
+                      <img src="./assets/images/area/map_area2_hover.svg" class="hover" alt="" />
+                      <img src="./assets/images/area/marker_2.png" class="marker" alt="" />
                     </div>
                     <div class="area_line line_num3">
-                      <img src="./assets/images/area/map_area3.svg" alt="" />
                       <a href="#" class="hit_event"></a>
+                      <img src="./assets/images/area/map_area3.svg" class="default" alt="" />
+                      <img src="./assets/images/area/map_area3_hover.svg" class="hover" alt="" />
+                      <img src="./assets/images/area/marker_3.png" class="marker" alt="" />
                     </div>
                     <div class="area_line line_num4">
-                      <img src="./assets/images/area/map_area4.svg" alt="" />
                       <a href="#" class="hit_event"></a>
+                      <img src="./assets/images/area/map_area4.svg" class="default" alt="" />
+                      <img src="./assets/images/area/map_area4_hover.svg" class="hover" alt="" />
+                      <img src="./assets/images/area/marker_4.png" class="marker" alt="" />
                     </div>
                     <div class="area_line line_num5">
-                      <img src="./assets/images/area/map_area5.svg" alt="" />
                       <a href="#" class="hit_event"></a>
+                      <img src="./assets/images/area/map_area5.svg" class="default" alt="" />
+                      <img src="./assets/images/area/map_area5_hover.svg" class="hover" alt="" />
+                      <img src="./assets/images/area/marker_5.png" class="marker" alt="" />
                     </div>
                     <div class="area_line line_num6">
-                      <img src="./assets/images/area/map_area6.svg" alt="" />
                       <a href="#" class="hit_event"></a>
+                      <img src="./assets/images/area/map_area6.svg" class="default" alt="" />
+                      <img src="./assets/images/area/map_area6_hover.svg" class="hover" alt="" />
+                      <img src="./assets/images/area/marker_6.png" class="marker" alt="" />
                     </div>
                     <div class="area_line line_num8">
-                      <img src="./assets/images/area/map_area8.svg" alt="" />
                       <a href="#" class="hit_event"></a>
+                      <img src="./assets/images/area/map_area8.svg" class="default" alt="" />
+                      <img src="./assets/images/area/map_area8_hover.svg" class="hover" alt="" />
+                      <img src="./assets/images/area/marker_8.png" class="marker" alt="" />
                     </div>
                     <!-- <ul class="area_section_list">
                       <li class="area_1">
@@ -1684,11 +1702,12 @@
       </div>
     </div>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {});
+      document.addEventListener("DOMContentLoaded", () => {
+        mapEvent();
+      });
       window.addEventListener("load", () => {
         mirrorMaxStyle();
       });
-
       function mirrorMaxStyle() {
         const legend_dom_list = document.querySelectorAll(".info_graphic_cols .legend_dom_list");
 
@@ -1707,6 +1726,17 @@
             item.style.minWidth = Math.max(...maxArray) + "px";
           });
         }
+      }
+      function mapEvent() {
+        const hit_event = document.querySelectorAll(".hit_event");
+        hit_event.forEach((eachTarget) => {
+          eachTarget.addEventListener("mouseenter", (e) => {
+            e.currentTarget.closest(".area_line").classList.add("enter");
+          });
+          eachTarget.addEventListener("mouseleave", (e) => {
+            e.currentTarget.closest(".area_line").classList.remove("enter");
+          });
+        });
       }
     </script>
   </body>
