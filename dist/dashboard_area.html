@@ -1,1628 +1,1705 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/reset.css" rel="stylesheet" />
+    <link href="./assets/css/webfont.css" rel="stylesheet" />
+    <link href="./assets/css/layout.css" rel="stylesheet" />
+    <link href="./assets/css/contents.css" rel="stylesheet" />
+    <title></title>
+  </head>
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8" />
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="./assets/css/reset.css" rel="stylesheet" />
-	<link href="./assets/css/webfont.css" rel="stylesheet" />
-	<link href="./assets/css/layout.css" rel="stylesheet" />
-	<link href="./assets/css/contents.css" rel="stylesheet" />
-	<title></title>
-</head>
+  <body style="background: #15172c">
+    <div style="display: flex; flex-direction: column; min-height: 100vh">
+      <div style="background: #242a41; height: 98px; flex: 0 0 98px; display: flex; justify-content: center; align-items: center; color: #fff">Header</div>
+      <div style="flex: 1">
+        <!-- contents -->
+        <link href="./assets/css/dashboard.css" rel="stylesheet" />
+        <div class="dashboard_container">
+          <div class="dashboard_main_cols">
+            <div class="brick_box">
+              <div class="brick_title_row">
+                <p class="brick_title">춘천~속초 전체 노선 및 공구위치</p>
+              </div>
+              <div class="brick_contents">
+                <!-- map -->
+                <div class="area_map_render">
+                  <div class="area_bg_img"><img src="./assets/images/area/img_area_mapx2.png" alt="" /></div>
+                  <div class="area_section_group">
+                    <ul class="area_section_list">
+                      <li class="area_1">
+                        <span clas="area_dot"></span>
+                        <span class="area_marker_text">춘천</span>
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_1.png" alt="" /></span>
+                            <div class="area_word_balloon_layer right_pos">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">1공구</p>
+                        </div>
+                      </li>
+                      <li class="area_2 ing">
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_2.png" alt="" /></span>
+                            <div class="area_word_balloon_layer right_pos">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">2공구</p>
+                        </div>
+                      </li>
+                      <li class="area_3 ing">
+                        <span clas="area_dot"></span>
+                        <span class="area_marker_text">화천</span>
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_3.png" alt="" /></span>
+                            <div class="area_word_balloon_layer right_pos">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">3공구</p>
+                        </div>
+                      </li>
+                      <li class="area_4 ing">
+                        <span clas="area_dot"></span>
+                        <span class="area_marker_text">양구</span>
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_4.png" alt="" /></span>
+                            <div class="area_word_balloon_layer">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">4공구</p>
+                        </div>
+                      </li>
+                      <li class="area_5 ing">
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_5.png" alt="" /></span>
+                            <div class="area_word_balloon_layer">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">5공구</p>
+                        </div>
+                      </li>
+                      <li class="area_6 ing">
+                        <span class="area_marker_text">인제</span>
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_6.png" alt="" /></span>
+                            <div class="area_word_balloon_layer">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">6공구</p>
+                        </div>
+                      </li>
+                      <li class="area_7">
+                        <span class="area_marker_text">백담</span>
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_7.png" alt="" /></span>
+                            <div class="area_word_balloon_layer">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">7공구</p>
+                        </div>
+                      </li>
+                      <li class="area_8 ing">
+                        <span clas="area_dot"></span>
+                        <span class="area_marker_text">속초</span>
+                        <div class="area_marker_line">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                          <div class="area_maker_shape"></div>
+                          <div class="area_maker_item_wrap">
+                            <span class="area_marker_item"><img src="./assets/images/area/marker_8.png" alt="" /></span>
+                            <div class="area_word_balloon_layer">
+                              <div class="title_row">
+                                <p class="area_title_node">종합위험지수</p>
+                                <div class="else_item_group">
+                                  <span class="rating_flag green_gd">보통</span>
+                                  <div class="value_unit_item">
+                                    <span class="value_node">22</span>
+                                    <span class="unit_node">점</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="contents_row">
+                                <ul class="spec_display_list">
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">금일현장위험도</span></dt>
+                                      <dd><span class="spec_value_node highlight">32.11%</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">출역인원</span></dt>
+                                      <dd><span class="spec_value_node highlight">12명</span></dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="spec_display_item">
+                                      <dt><span class="spec_key_node">시공사</span></dt>
+                                      <dd><span class="spec_value_node">(주)동부건설</span></dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="area_info_text_group">
+                          <p class="area_info_text">8공구</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- // map -->
+              </div>
+            </div>
+            <div class="brick_box liquid">
+              <div class="brick_title_row">
+                <p class="brick_title">운영현장 리스트</p>
+              </div>
+              <div class="brick_contents">
+                <div class="map_legend_box">
+                  <div class="map_legend_cols">
+                    <table class="map_legend_tb">
+                      <tr>
+                        <td class="has_ico">
+                          <!-- <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span> -->
+                        </td>
+                        <td class="has_flag"><span class="rating_flag green_gd">보통</span></td>
+                        <td class="has_summary">
+                          <a href="#" class="map_summary_group">
+                            <p class="map_summary_main">
+                              춘천-속초 철도건설
+                              <strong>제2공구</strong>
+                              노반신설 기타공사
+                            </p>
+                            <p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
+                          </a>
+                        </td>
+                        <td class="has_keyword has_line"><span class="map_keyword">(주)동부건설</span></td>
+                      </tr>
+                      <tr>
+                        <td class="has_ico">
+                          <!--  <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span> -->
+                        </td>
+                        <td class="has_flag"><span class="rating_flag light_green_gd">보통</span></td>
+                        <td class="has_summary">
+                          <a href="#" class="map_summary_group">
+                            <p class="map_summary_main">
+                              춘천-속초 철도건설
+                              <strong>제3공구</strong>
+                              노반신설 기타공사
+                            </p>
+                            <p class="map_summary_sub">강원특별자치도 화천군 간동면 간척리</p>
+                          </a>
+                        </td>
+                        <td class="has_keyword has_line"><span class="map_keyword">(주)동부건설</span></td>
+                      </tr>
+                      <tr>
+                        <td class="has_ico">
+                          <!-- <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span> -->
+                        </td>
+                        <td class="has_flag"><span class="rating_flag light_orange_gd">주의</span></td>
+                        <td class="has_summary">
+                          <a href="#" class="map_summary_group">
+                            <p class="map_summary_main">
+                              춘천-속초 철도건설
+                              <strong>제4공구</strong>
+                              노반신설 기타공사
+                            </p>
+                            <p class="map_summary_sub">강원특별자치도 화천군 간동면 간척리</p>
+                          </a>
+                        </td>
+                        <td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="map_legend_cols">
+                    <table class="map_legend_tb">
+                      <tr>
+                        <td class="has_ico">
+                          <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
+                        </td>
+                        <td class="has_flag"><span class="rating_flag red_gd">위험</span></td>
+                        <td class="has_summary">
+                          <a href="#" class="map_summary_group">
+                            <p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
+                            <p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
+                          </a>
+                        </td>
+                        <td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
+                      </tr>
+                      <tr>
+                        <td class="has_ico"></td>
+                        <td class="has_flag"><span class="rating_flag green_gd">보통</span></td>
+                        <td class="has_summary">
+                          <a href="#" class="map_summary_group">
+                            <p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
+                            <p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
+                          </a>
+                        </td>
+                        <td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
+                      </tr>
+                      <tr>
+                        <td class="has_ico"></td>
+                        <td class="has_flag"><span class="rating_flag yellow_gd">주의</span></td>
+                        <td class="has_summary">
+                          <a href="#" class="map_summary_group">
+                            <p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
+                            <p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
+                          </a>
+                        </td>
+                        <td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brick_box">
+              <div class="brick_title_row gap_type2">
+                <p class="brick_title">안전 점검 현황</p>
+                <div class="else_cols_wrap">
+                  <div class="dash_select_wrap">
+                    <select class="dash_select" style="width: 260px">
+                      <option>춘천~속초 철도건설 노반신설 제2공구</option>
+                    </select>
+                    <i class="ico_arrow"><img src="./assets/images/area/ico_dropdown_20.png" alt="" /></i>
+                  </div>
+                </div>
+              </div>
+              <div class="brick_contents">
+                <div class="info_graphic_container">
+                  <div class="info_graphic_cols">
+                    <div class="info_graphic_title_row">
+                      <p class="info_graphic_title">산업안전보건법</p>
+                    </div>
+                    <div class="info_graphic_contents">
+                      <div class="info_graphic_cell">
+                        <div class="info_gracell_item">
+                          <div class="info_gracell_title_row">
+                            <p class="info_gracell_title">안전관리비 집행률</p>
+                          </div>
+                          <div class="info_gracell_contents">
+                            <div class="info_gauge_container">
+                              <div class="chart_cols">
+                                <div class="gauge_bar_wrap">
+                                  <div class="current_layer theme_purple" style="width: 49.5%">
+                                    <div class="gauge_current_value">
+                                      <span class="text_node">49.5%</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="legend_cols">
+                                <ul class="legend_dom_list">
+                                  <li>
+                                    <dl class="legend_dom_item">
+                                      <dt>
+                                        <span class="legend_dot" style="background: #3d81ff"></span>
+                                        <span class="text_node">집행금액</span>
+                                      </dt>
+                                      <dd>
+                                        <span class="value_text_node highlight">14,077,500원</span>
+                                      </dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="legend_dom_item">
+                                      <dt>
+                                        <span class="legend_dot" style="background: #2d3b56"></span>
+                                        <span class="text_node">계상금액</span>
+                                      </dt>
+                                      <dd>
+                                        <span class="value_text_node">221,156,400원</span>
+                                      </dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn_shape_more"></a>
+                      </div>
+                      <div class="info_graphic_cell short">
+                        <div class="info_gracell_item">
+                          <div class="info_gracell_title_row gap_type2">
+                            <p class="info_gracell_title">안전보건조정자</p>
+                          </div>
+                          <div class="info_gracell_contents">
+                            <div class="snippet_mark_container highlight">
+                              <div class="snippet_mark_cols">
+                                <div class="snippet_mark"><span class="text_node">Y</span></div>
+                              </div>
+                              <div class="snippet_copy_cols">
+                                <span class="snippet_copy_para">
+                                  목성엔지니어링
+                                  <br />
+                                  4공구
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info_graphic_cell before_last">
+                        <div class="info_gracell_item">
+                          <div class="info_gracell_title_row">
+                            <p class="info_gracell_title">위험성평가(수시)</p>
+                            <div class="info_gracell_else_wrap">
+                              <p class="info_gracell_note_para">
+                                승인
+                                <strong>3</strong>
+                                건
+                              </p>
+                            </div>
+                          </div>
+                          <div class="info_gracell_contents">
+                            <div class="info_gauge_container">
+                              <div class="chart_cols">
+                                <div class="gauge_bar_wrap">
+                                  <div class="current_layer theme_pink" style="width: 25%">
+                                    <div class="gauge_current_value">
+                                      <span class="text_node">1건</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="legend_cols">
+                                <ul class="legend_dom_list">
+                                  <li>
+                                    <dl class="legend_dom_item">
+                                      <dt>
+                                        <span class="legend_dot" style="background: #3d81ff"></span>
+                                        <span class="text_node">미조치</span>
+                                      </dt>
+                                      <dd>
+                                        <span class="value_text_node highlight">1건</span>
+                                      </dd>
+                                    </dl>
+                                  </li>
+                                  <li>
+                                    <dl class="legend_dom_item">
+                                      <dt>
+                                        <span class="legend_dot" style="background: #2d3b56"></span>
+                                        <span class="text_node">조치</span>
+                                      </dt>
+                                      <dd>
+                                        <span class="value_text_node">4건</span>
+                                      </dd>
+                                    </dl>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn_shape_more"></a>
+                      </div>
+                      <div class="info_graphic_cell short">
+                        <div class="info_gracell_item">
+                          <div class="info_gracell_title_row gap_type2">
+                            <p class="info_gracell_title">산업재해예방지도</p>
+                          </div>
+                          <div class="info_gracell_contents">
+                            <div class="snippet_mark_container">
+                              <div class="snippet_mark_cols">
+                                <div class="snippet_mark"><span class="text_node">N</span></div>
+                              </div>
+                              <div class="snippet_copy_cols">
+                                <span class="snippet_copy_para">없음</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn_shape_more"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info_graphic_cols">
+                    <div class="info_graphic_title_row">
+                      <p class="info_graphic_title">건설기술진흥법</p>
+                    </div>
+                    <div class="info_graphic_contents type_divide">
+                      <div class="info_graphic_cell has_chart">
+                        <div class="info_gracell_title_row">
+                          <p class="info_gracell_title">안전관리비 집행률</p>
+                        </div>
+                        <div class="info_donut_container">
+                          <div class="info_donut_render">
+                            <!-- HTML에서 %값을 지정 -->
+                            <div class="info_donut" style="--percent: 25"></div>
+                            <div class="info_donut_label">25%</div>
+                          </div>
+                          <div class="info_donut_legend_wrap">
+                            <ul class="legend_dom_list">
+                              <li>
+                                <dl class="legend_dom_item">
+                                  <dt>
+                                    <span class="legend_dot" style="background: #3d81ff"></span>
+                                    <span class="text_node">집행금액</span>
+                                  </dt>
+                                  <dd>
+                                    <span class="value_text_node highlight">14,077,500원</span>
+                                  </dd>
+                                </dl>
+                              </li>
+                              <li>
+                                <dl class="legend_dom_item">
+                                  <dt>
+                                    <span class="legend_dot" style="background: #2d3b56"></span>
+                                    <span class="text_node">계상금액</span>
+                                  </dt>
+                                  <dd>
+                                    <span class="value_text_node">221,156,400원</span>
+                                  </dd>
+                                </dl>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <a href="#" class="btn_shape_more"></a>
+                      </div>
+                      <div class="info_graphic_cell">
+                        <div class="info_gra_block">
+                          <div class="info_gblock_title_row">
+                            <p class="info_gblock_title">정기안전점검</p>
+                            <div class="info_gracell_else_wrap">
+                              <p class="info_gracell_note_para">
+                                총
+                                <strong>3</strong>
+                                건
+                              </p>
+                            </div>
+                          </div>
+                          <div class="info_gblock_contents">
+                            <div class="info_gauge_tb_wrap">
+                              <table class="info_gauge_tb">
+                                <tr>
+                                  <th><span class="info_gauge_thtext">적합</span></th>
+                                  <td>
+                                    <div class="info_tape_wrap theme_purple">
+                                      <div class="info_tape_current_value" style="width: 25%">
+                                        <div class="info_tape_current_count">
+                                          <span class="text_number_node">2</span>
+                                          <span class="text_unit_node">건</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th><span class="info_gauge_thtext">부적합</span></th>
+                                  <td>
+                                    <div class="info_tape_wrap theme_pink">
+                                      <div class="info_tape_current_value" style="width: 12.5%">
+                                        <div class="info_tape_current_count">
+                                          <span class="text_number_node">1</span>
+                                          <span class="text_unit_node">건</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <a href="#" class="btn_shape_more"></a>
+                        </div>
+                        <div class="info_gra_block">
+                          <div class="info_gblock_title_row">
+                            <p class="info_gblock_title">(건)자체안전점검</p>
+                            <div class="info_gracell_else_wrap">
+                              <p class="info_gracell_note_para">
+                                총
+                                <strong>3</strong>
+                                건
+                              </p>
+                            </div>
+                          </div>
+                          <div class="info_gblock_contents">
+                            <div class="info_gauge_tb_wrap">
+                              <table class="info_gauge_tb">
+                                <tr>
+                                  <th><span class="info_gauge_thtext">적합</span></th>
+                                  <td>
+                                    <div class="info_tape_wrap theme_purple">
+                                      <div class="info_tape_current_value" style="width: 25%">
+                                        <div class="info_tape_current_count">
+                                          <span class="text_number_node">2</span>
+                                          <span class="text_unit_node">건</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th><span class="info_gauge_thtext">부적합</span></th>
+                                  <td>
+                                    <div class="info_tape_wrap theme_pink">
+                                      <div class="info_tape_current_value" style="width: 12.5%">
+                                        <div class="info_tape_current_count">
+                                          <span class="text_number_node">1</span>
+                                          <span class="text_unit_node">건</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <a href="#" class="btn_shape_more"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard_sub_cols">
+            <div class="brick_block_wrap">
+              <div class="brick_box">
+                <div class="brick_title_row">
+                  <p class="brick_title">현장 위험도</p>
+                  <div class="else_cols_wrap">
+                    <p class="brick_title_note">금일 위험도 추세 (2025년 10월 21일 기준)</p>
+                  </div>
+                </div>
+                <div class="brick_contents">
+                  <div class="liner_chart_wrap">
+                    <div style="background: #304060; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 14px; height: 192px">Chart 구현(개발팀)</div>
+                  </div>
+                  <div class="capsule_legend_wrap">
+                    <ul class="capsule_legend_list">
+                      <li>
+                        <div class="capsule_legend_item primary">
+                          <span class="dot_item"></span>
+                          <span class="text_node">전체</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="capsule_legend_item">
+                          <span class="dot_item" style="background-color: #7a7dd4"></span>
+                          <span class="text_node" style="color: #7a7dd4">2공구</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="capsule_legend_item">
+                          <span class="dot_item" style="background-color: #478cec"></span>
+                          <span class="text_node" style="color: #478cec">3공구</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="capsule_legend_item">
+                          <span class="dot_item" style="background-color: #ea5196"></span>
+                          <span class="text_node" style="color: #ea5196">4공구</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="capsule_legend_item">
+                          <span class="dot_item" style="background-color: #b7e5b2"></span>
+                          <span class="text_node" style="color: #b7e5b2">5공구</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="capsule_legend_item">
+                          <span class="dot_item" style="background-color: #0be6d3"></span>
+                          <span class="text_node" style="color: #0be6d3">6공구</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="capsule_legend_item">
+                          <span class="dot_item" style="background-color: #e8bcb0"></span>
+                          <span class="text_node" style="color: #e8bcb0">8공구</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="brick_box">
+                <div class="brick_title_row">
+                  <p class="brick_title">근로자 출역 현황</p>
+                </div>
+                <div class="brick_contents">
+                  <div class="score_container">
+                    <div class="score_main_cols">
+                      <div class="score_hor_box">
+                        <div class="score_hor_cols">
+                          <div class="key_column">
+                            <p class="hor_label_text">총 출역 인원</p>
+                          </div>
+                          <div class="value_column">
+                            <div class="hor_score_item">
+                              <span class="number_node">75</span>
+                              <span class="unit_node">명</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="score_hor_cols">
+                          <div class="key_column">
+                            <p class="hor_label_text">평균 위험도</p>
+                          </div>
+                          <div class="value_column">
+                            <div class="hor_score_item">
+                              <span class="number_node">21.5</span>
+                              <span class="unit_node">%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="score_sub_cols">
+                      <div class="score_hor_box">
+                        <div class="score_hor_cols">
+                          <div class="key_column">
+                            <p class="hor_label_pod">신규 근로자</p>
+                          </div>
+                          <div class="value_column">
+                            <div class="hor_score_item">
+                              <span class="number_node">12</span>
+                              <span class="unit_node">명</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="score_hor_cols">
+                          <div class="key_column">
+                            <p class="hor_label_pod">질환 근로자</p>
+                          </div>
+                          <div class="value_column">
+                            <div class="hor_score_item">
+                              <span class="number_node">5</span>
+                              <span class="unit_node">명</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="score_hor_cols">
+                          <div class="key_column">
+                            <p class="hor_label_pod">고령 근로자</p>
+                          </div>
+                          <div class="value_column">
+                            <div class="hor_score_item">
+                              <span class="number_node">8</span>
+                              <span class="unit_node">명</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="score_hor_cols">
+                          <div class="key_column">
+                            <p class="hor_label_pod">외국인 근로자</p>
+                          </div>
+                          <div class="value_column">
+                            <div class="hor_score_item">
+                              <span class="number_node">25</span>
+                              <span class="unit_node">명</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="brick_both_wrap">
+              <div class="brick_box">
+                <div class="brick_title_row">
+                  <p class="brick_title">위험 작업 현황</p>
+                </div>
+                <div class="brick_contents">
+                  <div class="report_grid_tb_wrap">
+                    <table class="report_grid_tb">
+                      <tr>
+                        <td colspan="2" class="primary">
+                          <div class="report_primary_item">
+                            <i class="ico"><img src="./assets/images/area/ico_total_count_36.png" alt="" /></i>
+                            <dl class="report_value_obj">
+                              <dt><span class="report_keynode">총 발생 건</span></dt>
+                              <dd>
+                                <div class="report_value_group">
+                                  <span class="report_number">9</span>
+                                  <span class="report_unit">건</span>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_01.png" alt="" /></i>
+                              <span class="report_chip_keynode">절토·성토</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_02.png" alt="" /></i>
+                              <span class="report_chip_keynode">거더 설치</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_03.png" alt="" /></i>
+                              <span class="report_chip_keynode">발파·굴진</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_04.png" alt="" /></i>
+                              <span class="report_chip_keynode">숏크리트</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_05.png" alt="" /></i>
+                              <span class="report_chip_keynode">골조·마감</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_06.png" alt="" /></i>
+                              <span class="report_chip_keynode">레일·침목 설치</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">2</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_07.png" alt="" /></i>
+                              <span class="report_chip_keynode">분기기 설치</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_08.png" alt="" /></i>
+                              <span class="report_chip_keynode">급전선로 설치</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_09.png" alt="" /></i>
+                              <span class="report_chip_keynode">변전설비 시공</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_10.png" alt="" /></i>
+                              <span class="report_chip_keynode">신호기기 설치</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_11.png" alt="" /></i>
+                              <span class="report_chip_keynode">케이블 포설</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_12.png" alt="" /></i>
+                              <span class="report_chip_keynode">방음벽 설치</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                        <td>
+                          <dl class="report_chip_obj">
+                            <dt>
+                              <i class="ico"><img src="./assets/images/area/ico_slice_count_13.png" alt="" /></i>
+                              <span class="report_chip_keynode">연동시험</span>
+                            </dt>
+                            <dd>
+                              <div class="report_value_group">
+                                <span class="report_number">0</span>
+                                <span class="report_unit">건</span>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="hover_layer">
+                            <ul class="report_feature_list">
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제2공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="report_feature_item">
+                                  <div class="text_node">
+                                    춘천-속초 철도건설
+                                    <strong>제3공구</strong>
+                                    노반신설 기타공사
+                                  </div>
+                                  <i class="ico"><img src="./assets/images/area/ico_arrow_16.png" alt="" /></i>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="brick_box">
+                <div class="brick_title_row">
+                  <p class="brick_title">IoT 장비 현황</p>
+                </div>
+                <div class="brick_contents">
+                  <div class="mark_info_tb_wrap">
+                    <table class="mark_info_tb">
+                      <tr>
+                        <th><span class="mark_info_thtext">제2공구</span></th>
+                        <th><span class="mark_info_thtext">제3공구</span></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="mark_info_list">
+                            <li>
+                              <div class="mark_info_item theme_green highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">정상</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="mark_info_item theme_orange">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_careful_none.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">없음</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="mark_info_list">
+                            <li>
+                              <div class="mark_info_item theme_green">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_gas_none.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">없음</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="mark_info_item theme_orange highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_careful_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">주의</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><span class="mark_info_thtext">제4공구</span></th>
+                        <th><span class="mark_info_thtext">제5공구</span></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="mark_info_list">
+                            <li>
+                              <div class="mark_info_item theme_green highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">정상</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="mark_info_item theme_red highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_warn_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">경고</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="mark_info_list">
+                            <li>
+                              <div class="mark_info_item theme_green highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">정상</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="mark_info_item theme_orange">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_careful_none.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">없음</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th><span class="mark_info_thtext">제6공구</span></th>
+                        <th><span class="mark_info_thtext">제8공구</span></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul class="mark_info_list">
+                            <li>
+                              <div class="mark_info_item theme_green highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">정상</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="mark_info_item theme_orange highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_careful_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">주의</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul class="mark_info_list">
+                            <li>
+                              <div class="mark_info_item theme_green">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_gas_none.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">없음</p>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="mark_info_item theme_red highlight">
+                                <div class="img_row"><img src="./assets/images/area/mark_img_warn_active.png" alt="" /></div>
+                                <div class="spec_row">
+                                  <p class="mark_info_text">경고</p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // contents -->
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {});
+      window.addEventListener("load", () => {
+        mirrorMaxStyle();
+      });
 
-<body style="background: #15172c">
-	<div style="display: flex; flex-direction: column; min-height: 100vh">
-		<div style="background: #242a41; height: 98px; flex: 0 0 98px; display: flex; justify-content: center; align-items: center; color: #fff">Header</div>
-		<div style="flex: 1">
-			<!-- contents -->
-			<link href="./assets/css/dashboard.css" rel="stylesheet" />
-			<div class="dashboard_container">
-				<div class="dashboard_main_cols">
-					<div class="brick_box">
-						<div class="brick_title_row">
-							<p class="brick_title">춘천~속초 전체 노선 및 공구위치</p>
-						</div>
-						<div class="brick_contents">
-							<!-- map -->
-							<div class="area_map_render">
-								<div class="area_bg_img"><img src="./assets/images/area/img_area_map.png" alt="" /></div>
-								<div class="area_section_group">
-									<ul class="area_section_list">
-										<li class="area_1">
-											<span clas="area_dot"></span>
-											<span class="area_marker_text">춘천</span>
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_1.png" alt="" /></span>
-													<div class="area_word_balloon_layer right_pos">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
+      function mirrorMaxStyle() {
+        const legend_dom_list = document.querySelectorAll(".info_graphic_cols .legend_dom_list");
 
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">1공구</p>
-											</div>
-										</li>
-										<li class="area_2 ing">
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_2.png" alt="" /></span>
-													<div class="area_word_balloon_layer right_pos">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
+        action();
+        window.addEventListener("resize", () => {
+          action();
+        });
 
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">2공구</p>
-											</div>
-										</li>
-										<li class="area_3 ing">
-											<span clas="area_dot"></span>
-											<span class="area_marker_text">화천</span>
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_3.png" alt="" /></span>
-													<div class="area_word_balloon_layer right_pos">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">3공구</p>
-											</div>
-										</li>
-										<li class="area_4 ing">
-											<span clas="area_dot"></span>
-											<span class="area_marker_text">양구</span>
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_4.png" alt="" /></span>
-													<div class="area_word_balloon_layer">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">4공구</p>
-											</div>
-										</li>
-										<li class="area_5 ing">
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_5.png" alt="" /></span>
-													<div class="area_word_balloon_layer">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">5공구</p>
-											</div>
-										</li>
-										<li class="area_6 ing">
-											<span class="area_marker_text">인제</span>
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_6.png" alt="" /></span>
-													<div class="area_word_balloon_layer">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">6공구</p>
-											</div>
-										</li>
-										<li class="area_7">
-											<span class="area_marker_text">백담</span>
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_7.png" alt="" /></span>
-													<div class="area_word_balloon_layer">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">7공구</p>
-											</div>
-										</li>
-										<li class="area_8 ing">
-											<span clas="area_dot"></span>
-											<span class="area_marker_text">속초</span>
-											<div class="area_marker_line">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-												<div class="area_maker_shape"></div>
-												<div class="area_maker_item_wrap">
-													<span class="area_marker_item"><img src="./assets/images/area/marker_8.png" alt="" /></span>
-													<div class="area_word_balloon_layer">
-														<div class="title_row">
-															<p class="area_title_node">종합위험지수</p>
-															<div class="else_item_group">
-																<span class="rating_flag green_gd">보통</span>
-																<div class="value_unit_item">
-																	<span class="value_node">22</span>
-																	<span class="unit_node">점</span>
-																</div>
-															</div>
-														</div>
-														<div class="contents_row">
-															<ul class="spec_display_list">
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">금일현장위험도</span></dt>
-																		<dd><span class="spec_value_node highlight">32.11%</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">출역인원</span></dt>
-																		<dd><span class="spec_value_node highlight">12명</span></dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="spec_display_item">
-																		<dt><span class="spec_key_node">시공사</span></dt>
-																		<dd><span class="spec_value_node">(주)동부건설</span></dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-
-												</div>
-											</div>
-											<div class="area_info_text_group">
-												<p class="area_info_text">8공구</p>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- // map -->
-						</div>
-					</div>
-					<div class="brick_box liquid">
-						<div class="brick_title_row">
-							<p class="brick_title">운영현장 리스트</p>
-						</div>
-						<div class="brick_contents">
-							<div class="map_legend_box">
-								<div class="map_legend_cols">
-									<table class="map_legend_tb">
-										<tr>
-											<td class="has_ico">
-												<!-- <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span> -->
-											</td>
-											<td class="has_flag"><span class="rating_flag green_gd">보통</span></td>
-											<td class="has_summary">
-												<div class="map_summary_group">
-													<p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
-													<p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
-												</div>
-											</td>
-											<td class="has_keyword has_line"><span class="map_keyword">(주)동부건설</span></td>
-										</tr>
-										<tr>
-											<td class="has_ico">
-												<!--  <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span> -->
-											</td>
-											<td class="has_flag"><span class="rating_flag light_green_gd">보통</span></td>
-											<td class="has_summary">
-												<div class="map_summary_group">
-													<p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
-													<p class="map_summary_sub">강원특별자치도 화천군 간동면 간척리</p>
-												</div>
-											</td>
-											<td class="has_keyword has_line"><span class="map_keyword">(주)동부건설</span></td>
-										</tr>
-										<tr>
-											<td class="has_ico">
-												<!-- <span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span> -->
-											</td>
-											<td class="has_flag"><span class="rating_flag light_orange_gd">주의</span></td>
-											<td class="has_summary">
-												<div class="map_summary_group">
-													<p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
-													<p class="map_summary_sub">강원특별자치도 화천군 간동면 간척리</p>
-												</div>
-											</td>
-											<td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
-										</tr>
-									</table>
-								</div>
-								<div class="map_legend_cols">
-									<table class="map_legend_tb">
-										<tr>
-											<td class="has_ico">
-												<span class="area_danger_item"><img src="./assets/images/area/ico_warn.png" alt="" /></span>
-											</td>
-											<td class="has_flag"><span class="rating_flag red_gd">위험</span></td>
-											<td class="has_summary">
-												<div class="map_summary_group">
-													<p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
-													<p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
-												</div>
-											</td>
-											<td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
-										</tr>
-										<tr>
-											<td class="has_ico"></td>
-											<td class="has_flag"><span class="rating_flag green_gd">보통</span></td>
-											<td class="has_summary">
-												<div class="map_summary_group">
-													<p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
-													<p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
-												</div>
-											</td>
-											<td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
-										</tr>
-										<tr>
-											<td class="has_ico"></td>
-											<td class="has_flag"><span class="rating_flag yellow_gd">주의</span></td>
-											<td class="has_summary">
-												<div class="map_summary_group">
-													<p class="map_summary_main">춘천-속초 철도건설 제2공구 노반신설 기타공사</p>
-													<p class="map_summary_sub">강원특별자치도 춘천시 신북읍 맥국2길 199</p>
-												</div>
-											</td>
-											<td class="has_keyword has_line"><span class="map_keyword">(주)에스케이에코</span></td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="brick_box">
-						<div class="brick_title_row">
-							<p class="brick_title">안전 점검 현황</p>
-							<div class="else_cols_wrap">
-								<select class="dash_select">
-									<option>춘천~속초 철도건설 노반신설 제2공구</option>
-								</select>
-							</div>
-						</div>
-						<div class="brick_contents">
-							<div class="info_graphic_container">
-								<div class="info_graphic_cols">
-									<div class="info_graphic_title_row">
-										<p class="info_graphic_title">산업안전보건법</p>
-									</div>
-									<div class="info_graphic_contents">
-										<div class="info_graphic_cell">
-											<div class="info_gracell_item">
-												<div class="info_gracell_title_row">
-													<p class="info_gracell_title">안전관리비 집행률</p>
-												</div>
-												<div class="info_gracell_contents">
-													<div class="info_gauge_container">
-														<div class="chart_cols">
-															<div class="gauge_bar_wrap">
-																<div class="current_layer theme_purple" style="width: 49.5%">
-																	<div class="gauge_current_value">
-																		<span class="text_node">49.5%</span>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="legend_cols">
-															<ul class="legend_dom_list">
-																<li>
-																	<dl class="legend_dom_item">
-																		<dt>
-																			<span class="legend_dot" style="background: #3d81ff"></span>
-																			<span class="text_node">집행금액</span>
-																		</dt>
-																		<dd>
-																			<span class="value_text_node highlight">14,077,500원</span>
-																		</dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="legend_dom_item">
-																		<dt>
-																			<span class="legend_dot" style="background: #2d3b56"></span>
-																			<span class="text_node">계상금액</span>
-																		</dt>
-																		<dd>
-																			<span class="value_text_node">221,156,400원</span>
-																		</dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-											<a href="#" class="btn_shape_more"></a>
-										</div>
-										<div class="info_graphic_cell short">
-											<div class="info_gracell_item">
-												<div class="info_gracell_title_row">
-													<p class="info_gracell_title">안전보건조정자</p>
-												</div>
-												<div class="info_gracell_contents">
-													<div class="snippet_mark_container highlight">
-														<div class="snippet_mark_cols">
-															<div class="snippet_mark"><span class="text_node">Y</span></div>
-														</div>
-														<div class="snippet_copy_cols">
-															<span class="snippet_copy_para">
-																목성엔지니어링
-																<br />
-																4공구
-															</span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="info_graphic_cell">
-											<div class="info_gracell_item">
-												<div class="info_gracell_title_row">
-													<p class="info_gracell_title">위험성평가(수시)</p>
-													<div class="info_gracell_else_wrap">
-														<p class="info_gracell_note_para">
-															승인
-															<strong>3</strong>
-															건
-														</p>
-													</div>
-												</div>
-												<div class="info_gracell_contents">
-													<div class="info_gauge_container">
-														<div class="chart_cols">
-															<div class="gauge_bar_wrap">
-																<div class="current_layer theme_pink" style="width: 25%">
-																	<div class="gauge_current_value">
-																		<span class="text_node">1건</span>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="legend_cols">
-															<ul class="legend_dom_list">
-																<li>
-																	<dl class="legend_dom_item">
-																		<dt>
-																			<span class="legend_dot" style="background: #3d81ff"></span>
-																			<span class="text_node">미조치</span>
-																		</dt>
-																		<dd>
-																			<span class="value_text_node highlight">1건</span>
-																		</dd>
-																	</dl>
-																</li>
-																<li>
-																	<dl class="legend_dom_item">
-																		<dt>
-																			<span class="legend_dot" style="background: #2d3b56"></span>
-																			<span class="text_node">조치</span>
-																		</dt>
-																		<dd>
-																			<span class="value_text_node">4건</span>
-																		</dd>
-																	</dl>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-											<a href="#" class="btn_shape_more"></a>
-										</div>
-										<div class="info_graphic_cell short">
-											<div class="info_gracell_item">
-												<div class="info_gracell_title_row">
-													<p class="info_gracell_title">산업재해예방지도</p>
-												</div>
-												<div class="info_gracell_contents">
-													<div class="snippet_mark_container">
-														<div class="snippet_mark_cols">
-															<div class="snippet_mark"><span class="text_node">N</span></div>
-														</div>
-														<div class="snippet_copy_cols">
-															<span class="snippet_copy_para">없음</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<a href="#" class="btn_shape_more"></a>
-										</div>
-									</div>
-								</div>
-								<div class="info_graphic_cols">
-									<div class="info_graphic_title_row">
-										<p class="info_graphic_title">건설기술진흥법</p>
-									</div>
-									<div class="info_graphic_contents">
-										<div class="info_graphic_cell has_chart">
-											<div class="info_donut_container">
-												<div class="info_donut_render">
-													<!-- HTML에서 %값을 지정 -->
-													<div class="info_donut" style="--percent: 25"></div>
-													<div class="info_donut_label">25%</div>
-												</div>
-												<div class="info_donut_legend_wrap">
-													<ul class="legend_dom_list">
-														<li>
-															<dl class="legend_dom_item">
-																<dt>
-																	<span class="legend_dot" style="background: #3d81ff"></span>
-																	<span class="text_node">집행금액</span>
-																</dt>
-																<dd>
-																	<span class="value_text_node highlight">14,077,500원</span>
-																</dd>
-															</dl>
-														</li>
-														<li>
-															<dl class="legend_dom_item">
-																<dt>
-																	<span class="legend_dot" style="background: #2d3b56"></span>
-																	<span class="text_node">계상금액</span>
-																</dt>
-																<dd>
-																	<span class="value_text_node">221,156,400원</span>
-																</dd>
-															</dl>
-														</li>
-													</ul>
-												</div>
-												<a href="#" class="btn_shape_more"></a>
-											</div>
-										</div>
-										<div class="info_graphic_cell">
-											<div class="info_gra_block">
-												<div class="info_gblock_title_row">
-													<p class="info_gblock_title">정기안전점검</p>
-													<div class="info_gracell_else_wrap">
-														<p class="info_gracell_note_para">
-															총
-															<strong>3</strong>
-															건
-														</p>
-													</div>
-												</div>
-												<div class="info_gblock_contents">
-													<table class="info_gauge_tb">
-														<tr>
-															<th><span class="info_gauge_thtext">적합</span></th>
-															<td>
-																<div class="info_tape_wrap theme_purple">
-																	<div class="info_tape_current_value" style="width: 25%">
-																		<span class="text_node">2건</span>
-																	</div>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<th><span class="info_gauge_thtext">부적합</span></th>
-															<td>
-																<div class="info_tape_wrap theme_pink">
-																	<div class="info_tape_current_value" style="width: 12.5%">
-																		<span class="text_node">1건</span>
-																	</div>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</div>
-											</div>
-											<div class="info_gra_block">
-												<div class="info_gblock_title_row">
-													<p class="info_gblock_title">(건)자체안전점검</p>
-													<div class="info_gracell_else_wrap">
-														<p class="info_gracell_note_para">
-															총
-															<strong>3</strong>
-															건
-														</p>
-													</div>
-												</div>
-												<div class="info_gblock_contents">
-													<table class="info_gauge_tb">
-														<tr>
-															<th><span class="info_gauge_thtext">적합</span></th>
-															<td>
-																<div class="info_tape_wrap theme_purple">
-																	<div class="info_tape_current_value" style="width: 25%">
-																		<span class="text_node">2건</span>
-																	</div>
-																</div>
-															</td>
-														</tr>
-														<tr>
-															<th><span class="info_gauge_thtext">부적합</span></th>
-															<td>
-																<div class="info_tape_wrap theme_pink">
-																	<div class="info_tape_current_value" style="width: 12.5%">
-																		<span class="text_node">1건</span>
-																	</div>
-																</div>
-															</td>
-														</tr>
-													</table>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="dashboard_sub_cols">
-					<div class="brick_block_wrap">
-						<div class="brick_box">
-							<div class="brick_title_row">
-								<p class="brick_title">현장 위험도</p>
-								<div class="else_cols_wrap">
-									<p class="brick_title_note">금일 위험도 추세 (2025년 10월 21일 기준)</p>
-								</div>
-							</div>
-							<div class="brick_contents">
-								<div class="liner_chart_wrap">
-									<div style="background: #304060; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 14px; height: 192px">차크 구현(개발팀)</div>
-								</div>
-								<div class="capsule_legend_wrap">
-									<ul class="capsule_legend_list">
-										<li>
-											<div class="capsule_legend_item primary">
-												<span class="dot_item"></span>
-												<span class="text_node">전체</span>
-											</div>
-										</li>
-										<li>
-											<div class="capsule_legend_item">
-												<span class="dot_item" style="background-color: #7a7dd4"></span>
-												<span class="text_node" style="color: #7a7dd4">2공구</span>
-											</div>
-										</li>
-										<li>
-											<div class="capsule_legend_item">
-												<span class="dot_item" style="background-color: #478cec"></span>
-												<span class="text_node" style="color: #478cec">3공구</span>
-											</div>
-										</li>
-										<li>
-											<div class="capsule_legend_item">
-												<span class="dot_item" style="background-color: #ea5196"></span>
-												<span class="text_node" style="color: #ea5196">4공구</span>
-											</div>
-										</li>
-										<li>
-											<div class="capsule_legend_item">
-												<span class="dot_item" style="background-color: #b7e5b2"></span>
-												<span class="text_node" style="color: #b7e5b2">5공구</span>
-											</div>
-										</li>
-										<li>
-											<div class="capsule_legend_item">
-												<span class="dot_item" style="background-color: #0be6d3"></span>
-												<span class="text_node" style="color: #0be6d3">6공구</span>
-											</div>
-										</li>
-										<li>
-											<div class="capsule_legend_item">
-												<span class="dot_item" style="background-color: #e8bcb0"></span>
-												<span class="text_node" style="color: #e8bcb0">8공구</span>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="brick_box">
-							<div class="brick_title_row">
-								<p class="brick_title">근로자 출역 현황</p>
-							</div>
-							<div class="brick_contents">
-								<div class="score_container">
-									<div class="score_main_cols">
-										<div class="score_hor_box">
-											<div class="score_hor_cols">
-												<div class="key_column">
-													<p class="hor_label_text">총 출역 인원</p>
-												</div>
-												<div class="value_column">
-													<div class="hor_score_item">
-														<span class="number_node">75</span>
-														<span class="unit_node">명</span>
-													</div>
-												</div>
-											</div>
-											<div class="score_hor_cols">
-												<div class="key_column">
-													<p class="hor_label_text">평균 위험도</p>
-												</div>
-												<div class="value_column">
-													<div class="hor_score_item">
-														<span class="number_node">21.5</span>
-														<span class="unit_node">%</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="score_sub_cols">
-										<div class="score_hor_box">
-											<div class="score_hor_cols">
-												<div class="key_column">
-													<p class="hor_label_pod">신규 근로자</p>
-												</div>
-												<div class="value_column">
-													<div class="hor_score_item">
-														<span class="number_node">12</span>
-														<span class="unit_node">명</span>
-													</div>
-												</div>
-											</div>
-											<div class="score_hor_cols">
-												<div class="key_column">
-													<p class="hor_label_pod">질환 근로자</p>
-												</div>
-												<div class="value_column">
-													<div class="hor_score_item">
-														<span class="number_node">5</span>
-														<span class="unit_node">명</span>
-													</div>
-												</div>
-											</div>
-											<div class="score_hor_cols">
-												<div class="key_column">
-													<p class="hor_label_pod">고령 근로자</p>
-												</div>
-												<div class="value_column">
-													<div class="hor_score_item">
-														<span class="number_node">8</span>
-														<span class="unit_node">명</span>
-													</div>
-												</div>
-											</div>
-											<div class="score_hor_cols">
-												<div class="key_column">
-													<p class="hor_label_pod">외국인 근로자</p>
-												</div>
-												<div class="value_column">
-													<div class="hor_score_item">
-														<span class="number_node">25</span>
-														<span class="unit_node">명</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="brick_both_wrap">
-						<div class="brick_box">
-							<div class="brick_title_row">
-								<p class="brick_title">위험 작업 현황</p>
-							</div>
-							<div class="brick_contents">
-								<div class="report_grid_tb_wrap">
-									<table class="report_grid_tb">
-										<tr>
-											<td colspan="2" class="primary">
-												<div class="report_primary_item">
-													<i class="ico"><img src="./assets/images/area/ico_total_count_36.png" alt="" /></i>
-													<dl class="report_value_obj">
-														<dt><span class="report_keynode">총 발생 건</span></dt>
-														<dd>
-															<div class="report_value_group">
-																<span class="report_number">9</span>
-																<span class="report_unit">건</span>
-															</div>
-														</dd>
-													</dl>
-												</div>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_01.png" alt="" /></i>
-														<span class="report_chip_keynode">절토·성토</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_02.png" alt="" /></i>
-														<span class="report_chip_keynode">거더 설치</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_03.png" alt="" /></i>
-														<span class="report_chip_keynode">발파·굴진</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_04.png" alt="" /></i>
-														<span class="report_chip_keynode">숏크리트</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_05.png" alt="" /></i>
-														<span class="report_chip_keynode">골조·마감</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_06.png" alt="" /></i>
-														<span class="report_chip_keynode">레일·침목 설치</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">2</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_07.png" alt="" /></i>
-														<span class="report_chip_keynode">분기기 설치</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_08.png" alt="" /></i>
-														<span class="report_chip_keynode">급전선로 설치</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_09.png" alt="" /></i>
-														<span class="report_chip_keynode">변전설비 시공</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_10.png" alt="" /></i>
-														<span class="report_chip_keynode">신호기기 설치</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_11.png" alt="" /></i>
-														<span class="report_chip_keynode">케이블 포설</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_12.png" alt="" /></i>
-														<span class="report_chip_keynode">방음벽 설치</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-											<td>
-												<dl class="report_chip_obj">
-													<dt>
-														<i class="ico"><img src="./assets/images/area/ico_slice_count_13.png" alt="" /></i>
-														<span class="report_chip_keynode">연동시험</span>
-													</dt>
-													<dd>
-														<div class="report_value_group">
-															<span class="report_number">0</span>
-															<span class="report_unit">건</span>
-														</div>
-													</dd>
-												</dl>
-												<div class="hover_layer">
-													<ul class="report_feature_list">
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제2공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-														<li>
-															<a href="#" class="report_feature_item">
-																<div class="text_node">
-																	춘천-속초 철도건설
-																	<strong>제3공구</strong>
-																	노반신설 기타공사
-																</div>
-															</a>
-														</li>
-													</ul>
-												</div>
-											</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="brick_box">
-							<div class="brick_title_row">
-								<p class="brick_title">IoT 장비 현황</p>
-							</div>
-							<div class="brick_contents">
-								<div class="mark_info_tb_wrap">
-									<table class="mark_info_tb">
-										<tr>
-											<th><span class="mark_info_thtext">제2공구</span></th>
-											<th><span class="mark_info_thtext">제3공구</span></th>
-										</tr>
-										<tr>
-											<td>
-												<ul class="mark_info_list">
-													<li>
-														<div class="mark_info_item theme_green highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">정상</p>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="mark_info_item theme_orange">
-															<div class="img_row"><img src="./assets/images/area/mark_img_careful_none.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">없음</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</td>
-											<td>
-												<ul class="mark_info_list">
-													<li>
-														<div class="mark_info_item theme_green">
-															<div class="img_row"><img src="./assets/images/area/mark_img_gas_none.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">없음</p>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="mark_info_item theme_orange highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_careful_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">주의</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<th><span class="mark_info_thtext">제4공구</span></th>
-											<th><span class="mark_info_thtext">제5공구</span></th>
-										</tr>
-										<tr>
-											<td>
-												<ul class="mark_info_list">
-													<li>
-														<div class="mark_info_item theme_green highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">정상</p>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="mark_info_item theme_red highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_warn_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">경고</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</td>
-											<td>
-												<ul class="mark_info_list">
-													<li>
-														<div class="mark_info_item theme_green highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">정상</p>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="mark_info_item theme_orange">
-															<div class="img_row"><img src="./assets/images/area/mark_img_careful_none.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">없음</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<th><span class="mark_info_thtext">제6공구</span></th>
-											<th><span class="mark_info_thtext">제8공구</span></th>
-										</tr>
-										<tr>
-											<td>
-												<ul class="mark_info_list">
-													<li>
-														<div class="mark_info_item theme_green highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_gas_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">정상</p>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="mark_info_item theme_orange highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_careful_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">주의</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</td>
-											<td>
-												<ul class="mark_info_list">
-													<li>
-														<div class="mark_info_item theme_green">
-															<div class="img_row"><img src="./assets/images/area/mark_img_gas_none.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">없음</p>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="mark_info_item theme_red highlight">
-															<div class="img_row"><img src="./assets/images/area/mark_img_warn_active.png" alt="" /></div>
-															<div class="spec_row">
-																<p class="mark_info_text">경고</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- // contents -->
-		</div>
-	</div>
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {});
-	</script>
-</body>
-
+        function action() {
+          let maxArray = [];
+          legend_dom_list.forEach((item) => {
+            item.style.minWidth = "";
+            maxArray.push(item.getBoundingClientRect().width);
+          });
+          legend_dom_list.forEach((item) => {
+            item.style.minWidth = Math.max(...maxArray) + "px";
+          });
+        }
+      }
+    </script>
+  </body>
 </html>

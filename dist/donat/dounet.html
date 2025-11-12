@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>도넛 게이지 (HTML에서 퍼센트 지정)</title>
-  <style>
-    body {
-      background: #1c2231;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도넛 게이지 (HTML에서 퍼센트 지정)</title>
+    <style>
+      body {
+        background: #1c2231;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
 
-    .chart {
-      position: relative;
-      width: 120px;
-      height: 120px;
-    }
+      .chart {
+        position: relative;
+        width: 120px;
+        height: 120px;
+      }
 
-    .circle {
-      --percent: 25; /* 기본값 */
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: conic-gradient(
-        from -90deg, /* 좌측 상단 시작 */
-        #7e75d0 0%,
-        #6f91e0 calc(var(--percent) * 1%),
-        #2c354a calc(var(--percent) * 1%) 100%
-      );
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background 0.4s ease;
-    }
+      .circle {
+        --percent: 25; /* 기본값 */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: conic-gradient(from 270deg, /* 상단(12시 방향) 시작 */ #2c354a calc(var(--percent) * 1%), /* 어두운 부분이 먼저 나오고 */ #6f91e0 0% /* 밝은 부분이 뒤로 돌아감 */);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background 0.4s ease;
+      }
 
-    .circle::before {
-      content: "";
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      background: #1c2231;
-      border-radius: 50%;
-    }
+      .circle::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        background: #1c2231;
+        border-radius: 50%;
+      }
 
-    .label {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -120%);
-      color: #cfd9ff;
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-  </style>
-</head>
-<body>
-  <div class="chart">
-    <!-- HTML에서 %값을 지정 -->
-    <div class="circle" style="--percent: 25"></div>
-    <div class="label">25%</div>
-  </div>
+      .label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -120%);
+        color: #cfd9ff;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chart">
+      <!-- HTML에서 %값을 지정 -->
+      <div class="circle" style="--percent: 25"></div>
+      <div class="label">25%</div>
+    </div>
 
-  <!-- 다른 예시 -->
-  <!--
+    <!-- 다른 예시 -->
+    <!--
   <div class="chart">
     <div class="circle" style="--percent: 75"></div>
     <div class="label">75%</div>
   </div>
-  -->
-</body>
+  --></body>
 </html>
