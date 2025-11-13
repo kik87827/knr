@@ -1,4 +1,4 @@
-.global_menu_zone{font-family: 'Pretendard';}
+.global_menu_zone{font-family: 'Noto Sans KR';}
 .global_menu_zone *{margin:0;padding:0;}
 .global_menu_zone button{border:0;appearance: none;cursor: pointer;}
 .global_menu_zone ul,
