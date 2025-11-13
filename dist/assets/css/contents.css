@@ -86,7 +86,7 @@
 
 
 .boxform_input_wrap .btn_role{}
-input.boxform_input{flex:1; height:54px;font-size:14px; color:#111928; outline:0; padding: 0 16px; line-height:1; appearance: none; border:0; background:transparent; border:0; -webkit-radius:0;}
+input.boxform_input{flex:1; font-family: 'Noto Sans KR'; height:54px;font-size:14px; color:#111928; outline:0; padding: 0 16px; line-height:1; appearance: none; border:0; background:transparent; border:0; -webkit-radius:0;}
 input.boxform_input::placeholder{font-size:14px; color:#9CA3AF;line-height:1;}
 .btn_role_wrap{display:flex; align-items: center;padding-right:16px; gap:10px;}
 .btn_role{width:24px;height:24px; cursor:pointer; background-position:0 0; background-repeat:no-repeat;background-size:100% auto; background-color:transparent; border:0; appearance: none;}
