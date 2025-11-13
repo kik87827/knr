@@ -51,7 +51,7 @@
 
 
 /* login */
-.login_page{min-height:100vh;background:url("../images/bg_login_x2.jpg") no-repeat 0 0/cover; min-width:1280px; box-sizing: border-box; padding:0 0; display:flex; align-items: center; position:relative;}
+.login_page{font-family: 'Noto Sans KR';min-height:100vh;background:url("../images/bg_login_x2.jpg") no-repeat 0 0/cover; min-width:1280px; box-sizing: border-box; padding:0 0; display:flex; align-items: center; position:relative;}
 .reader_node{color:transparent;overflow: hidden;display: inline-block;position: absolute;z-index: -1;width: 1px;height: 1px;margin: 0;border: 0;font-size: 1px;line-height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 .login_header{position:absolute;top:0;left:0;width:100%;box-sizing:border-box;padding:52px 56px;}
 .login_header .toplogo{margin:0;padding:0;width:169px;height:36px;background:url("../images/toplogo_login.png") no-repeat 0 0/100% auto;}
