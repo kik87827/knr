@@ -272,19 +272,21 @@ select.dash_select:disabled + .ico_arrow{opacity:.4;}
 .brick_box.liquid .brick_contents > *{flex:1;}
 
 .map_legend_box{background:#1D2239; border-radius:10px;border:1px solid #304060; display:flex;}
-.map_legend_cols{flex:1;position:relative;padding:8px 20px;}
+.map_legend_cols{flex:1;position:relative;padding:10px;}
 .map_legend_cols:after{display:block;content:'';width:1px;height:calc(100% - 32px); background:#304060; position:absolute;top:16px; right:0;}
 .map_legend_cols:last-of-type:after{display:none;}
 .map_legend_tb{border-collapse: collapse;width:100%;}
-.map_legend_tb td{padding:8px 0;vertical-align: top;}
-.map_legend_tb tr:last-of-type{}
+.map_legend_tb td{padding:10px;vertical-align: top;}
+.map_legend_tb tr td:first-of-type{border-radius:10px 0 0 10px;}
+.map_legend_tb tr td:last-of-type{border-radius:0 10px 10px 0;}
+.map_legend_tb tr:hover td{background: rgba(82, 105, 150, 0.3);}
 /* .map_legend_tb tr:last-of-type td{padding-bottom:0;} */
-.map_legend_tb td.has_ico{width:0;font-size:0;line-height:0;}
+.map_legend_tb td.has_ico{width:18px;font-size:0;line-height:0;padding-right:0;}
 .map_legend_tb td.has_ico .area_danger_item{height:20px; display:inline-flex; align-items: center; position:relative;top:-1px;margin-right:6px;}
-.map_legend_tb td.has_flag{width:1px;padding-right:10px;font-size:0;line-height:0;}
+.map_legend_tb td.has_flag{width:1px;padding-right:10px;font-size:0;line-height:0;padding-left:0;}
 .map_legend_tb td.has_flag .rating_flag{}
-.map_legend_tb td.has_summary{padding-right:10px;}
-.map_legend_tb td.has_keyword{width:1px;white-space: nowrap;padding:4px 0 0;}
+.map_legend_tb td.has_summary{padding-right:10px;padding-left:0;}
+.map_legend_tb td.has_keyword{width:1px;white-space: nowrap;padding-top:4px;}
 .map_legend_tb td.has_keyword.has_line .map_keyword{padding-left:10px;}
 .map_legend_tb td.has_keyword.has_line .map_keyword:before{display:block;content:'';width:1px;height:14px;background:#fff;opacity:.2;position:absolute;top:4px;left:0;}
 .map_keyword{font-size:14px; letter-spacing: -0.5px; color:#fff;display:inline-block; padding:0;margin:0; position:relative;}
