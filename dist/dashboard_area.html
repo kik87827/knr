@@ -1739,7 +1739,7 @@
 		document.addEventListener("DOMContentLoaded", () => {
 			mapEvent();
 			entryListHover();
-			mirrorHeightStyle();
+			mirrorHeightStyle([".entry_status_container"]);
 		});
 		window.addEventListener("load", () => {
 			mirrorMaxStyle();
@@ -1777,20 +1777,30 @@
 			});
 		}
 
-		function mirrorHeightStyle() {
-			const entry_status_container = document.querySelector(".entry_status_container");
-			const entry_intro_row = document.querySelector(".entry_intro_row");
-			const entry_list_row = document.querySelector(".entry_list_row");
+		function mirrorHeightStyle(selectorArray) {
+			if (!Array.isArray(selectorArray)) return;
+
+			// 문자열 배열 → 실제 요소 배열로 변환
+			const containers = selectorArray.map((selector) => document.querySelector(selector)).filter((el) => el); // null 제거
 
 			action();
-			window.addEventListener("resize", () => {
-				action();
-			});
+			window.addEventListener("resize", action);
 
 			function action() {
-				let entry_status_parent_height = entry_status_container.closest(".brick_contents").getBoundingClientRect().height;
-				let entry_intro_row_height = entry_intro_row.getBoundingClientRect().height;
-				entry_list_row.style.maxHeight = entry_status_parent_height - entry_intro_row_height + "px";
+				containers.forEach((container) => {
+					const intro = container.querySelector(".entry_intro_row");
+					const list = container.querySelector(".entry_list_row");
+					const parent = container.closest(".brick_contents");
+
+					if (!intro || !list || !parent) return;
+
+					list.style.removeProperty("max-height");
+
+					const parentHeight = parent.getBoundingClientRect().height;
+					const introHeight = intro.getBoundingClientRect().height;
+
+					list.style.maxHeight = parentHeight - introHeight + "px";
+				});
 			}
 		}
 

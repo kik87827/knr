@@ -562,7 +562,7 @@ display:flex; justify-content: center; align-items: center;
 .brick_panel_wrap{flex:1;display:flex; gap:20px;}
 .panel_data_cols{flex:0 0 400px;}
 .panel_data_cols{flex:0 0 400px;display:flex; flex-direction: column;}
-.panel_map_cols{flex:1;}
+.panel_map_cols{flex:1;min-width:0;}
 .panel_data_cols .brick_block_wrap{flex:1;gap:20px; display:flex; flex-direction: column;}
 .panel_data_cols .brick_block_wrap > .brick_box{flex:1;margin:0;}
 .panel_map_cols{display:flex; flex-direction: column;}
@@ -583,9 +583,62 @@ display:flex; justify-content: center; align-items: center;
 .count_chips_obj dt{font-size:12px;color:#707FA7;line-height:1;}
 .count_chips_obj dd{font-size:12px;color:#478CEC; font-weight:700;}
 /* // 251118 */
-
+/* 251119 */
+.report_board_box{}
+.report_board_list{}
+.report_board_list > li{}
+.report_board_item{}
+.report_board_obj,
+.report_board_obj dt,
+.report_board_obj dd{}
+.report_board_obj{}
+.report_board_obj dt{}
+.report_board_obj dd{}
+.report_board_obj dt,
+.report_board_obj dd{}
+.report_board_obj .rb_key{}
+.report_board_obj .rb_value{}
+.data_sheet_wrap{}
+.data_sheet{}
+.data_sheet thead th{}
+.data_sheet thead th:last-of-type{}
+.data_sheet tbody td{}
+.data_sheet tbody td.marking{}
+.data_sheet tbody td.marking .data_word_score .number_node,
+.data_sheet tbody td.marking .data_word_score .unit_node{}
+.data_sheet tbody td.marking .data_word_score .number_node{}
+.data_sheet tbody td.marking .data_word_score .unit_node{}
+.data_sheet tbody td:last-of-type{}
+.data_word_score{}
+.data_word_score .number_node{}
+.data_word_score .unit_node{}
+.status_map_zone{position:relative; overflow:hidden; border-radius: 10px; background:#1D2239;}
+.status_map_zone .bg_img{}
+.status_map_zone .bg_img img{max-width:100%;}
+.status_legend_layer{}
+.status_legend_list,
+.status_legend_list > li{}
+.status_legend_list{}
+.status_legend_list > li{}
+.status_legend_obj,
+.status_legend_obj dt,
+.status_legend_obj dd{}
+.status_legend_key{}
+.status_legend_score{}
+.status_legend_value{}
+.status_legend_unit{}
+.status_pos_layer{}
+.status_pos_layer .marker_img{}
+.status_pos_layer .marker_img img{}
+.status_pos_layer .pos_balloon{}
+.status_pos_layer .pos_pointer{}
+.status_pos_layer .pos_pointer img{}
+.status_pos_layer .pos_text_box{}
+.status_pos_layer .pos_text_box .text_node{}
+/* // 251119 */
 
 @media (max-width:1919px){
+    /* .dashboard_container.outline_type2 .dashboard_main_cols{flex-basis:920px;} */
     .dashboard_main_cols{flex-basis: 920px;}
     .line_num2{width: 91px; top: 78px;left: 88px;}
     .line_num2 .hit_event{top:44px}

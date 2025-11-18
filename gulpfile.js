@@ -73,7 +73,8 @@ function watchTask() {
 exports.default = gulp.series(
 	fileincludeTask,
 	beautifyTask,
-	gulp.parallel(watchTask, webserverTask)
+	/* gulp.parallel(watchTask, webserverTask) */
+	gulp.parallel(watchTask)
 );
 
 // 개별 실행 가능하도록 export
