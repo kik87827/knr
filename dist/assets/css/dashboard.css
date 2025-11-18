@@ -637,8 +637,8 @@ display:flex; justify-content: center; align-items: center;
 .status_pos_layer .pos_text_box .text_node{}
 /* // 251119 */
 
-@media (max-width:1919px){
-    /* .dashboard_container.outline_type2 .dashboard_main_cols{flex-basis:920px;} */
+@media (max-width:1900px){
+    .dashboard_container.outline_type2 .dashboard_main_cols{flex-basis:60.15037593984962%;}
     .dashboard_main_cols{flex-basis: 920px;}
     .line_num2{width: 91px; top: 78px;left: 88px;}
     .line_num2 .hit_event{top:44px}
