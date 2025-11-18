@@ -962,7 +962,7 @@
 									<div class="entry_list_row">
 										<ul class="entry_summary_list">
 											<li>
-												<a href="#" class="entry_summary_item">
+												<a href="#" class="entry_summary_item disabled">
 													<div class="string_cols">
 														<i class="ico">
 															<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1739,10 +1739,10 @@
 		document.addEventListener("DOMContentLoaded", () => {
 			mapEvent();
 			entryListHover();
+			mirrorHeightStyle();
 		});
 		window.addEventListener("load", () => {
 			mirrorMaxStyle();
-			mirrorHeightStyle();
 		});
 
 		function mirrorMaxStyle() {
@@ -1778,9 +1778,9 @@
 		}
 
 		function mirrorHeightStyle() {
+			const entry_status_container = document.querySelector(".entry_status_container");
 			const entry_intro_row = document.querySelector(".entry_intro_row");
 			const entry_list_row = document.querySelector(".entry_list_row");
-			const mark_info_tb_wrap = document.querySelector(".mark_info_tb_wrap");
 
 			action();
 			window.addEventListener("resize", () => {
@@ -1788,9 +1788,9 @@
 			});
 
 			function action() {
-				let mark_info_tb_height = mark_info_tb_wrap.getBoundingClientRect().height;
+				let entry_status_parent_height = entry_status_container.closest(".brick_contents").getBoundingClientRect().height;
 				let entry_intro_row_height = entry_intro_row.getBoundingClientRect().height;
-				entry_list_row.style.maxHeight = mark_info_tb_height - entry_intro_row_height + "px";
+				entry_list_row.style.maxHeight = entry_status_parent_height - entry_intro_row_height + "px";
 			}
 		}
 
