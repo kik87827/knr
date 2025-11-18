@@ -1,66 +1,86 @@
+const gulp = require("gulp");
+const fileinclude = require('gulp-file-include');
+const webserver = require('gulp-webserver');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const scss = require('gulp-sass')(require('sass'));
+const jshint = require('gulp-jshint');
+const beautify = require('gulp-beautify');
+const htmlbeautify = require('gulp-html-beautify');
 
-var gulp = require("gulp"),
-	fileinclude = require('gulp-file-include'),
-	webserver = require('gulp-webserver'),
-	sourcemaps = require('gulp-sourcemaps'),
-	autoprefixer = require('gulp-autoprefixer'),
-	scss = require('gulp-sass')(require('sass')),
-	jshint = require('gulp-jshint'),
-	beautify = require('gulp-beautify'),
-	htmlbeautify = require('gulp-html-beautify');
-
-gulp.task('default', ['fileinclude', 'beautify', 'watch']);
-
-gulp.task('scss', function () {
-	gulp.src('./src/scss/*.scss')
+// SCSS
+function scssTask() {
+	return gulp.src('./src/scss/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(scss().on('error', scss.logError))
 		.pipe(autoprefixer())
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./dist/css/'))
-});
+		.pipe(gulp.dest('./dist/css/'));
+}
 
-gulp.task('htmlbeautify', function () {
-	var options = { indent_with_tabs: true }
-	gulp.src('./src/**.html')
+// HTML Beautify
+function htmlbeautifyTask() {
+	const options = { indent_with_tabs: true };
+	return gulp.src('./src/**.html')
 		.pipe(htmlbeautify(options))
-		.pipe(gulp.dest('./dist/'))
-});
+		.pipe(gulp.dest('./dist/'));
+}
 
-gulp.task('jshint', function () {
-	gulp.src('./src/js/front.js')
+// JS Lint
+function jshintTask() {
+	return gulp.src('./src/js/front.js')
 		.pipe(jshint())
-		.pipe(jshint.reporter('default'))
-});
+		.pipe(jshint.reporter('default'));
+}
 
-gulp.task('beautify', function () {
-	gulp.src('./src/js/*.js')
+// JS Beautify
+function beautifyTask() {
+	return gulp.src('./src/js/*.js')
 		.pipe(beautify.js({ indent_size: 2 }))
-		.pipe(gulp.dest('./dist/js/'))
-});
+		.pipe(gulp.dest('./dist/js/'));
+}
 
-gulp.task('fileinclude', function () {
-	gulp.src(['./src/**.html'], { base: "./src/" })
+// File Include
+function fileincludeTask() {
+	return gulp.src(['./src/**.html'], { base: "./src/" })
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
-		}).on('error', function () { console.log('path error') }))
-		// .pipe(removeEmptyLines())
+		}).on('error', function () { console.log('path error'); }))
 		.pipe(htmlbeautify({ indent_with_tabs: true }))
-		.pipe(gulp.dest('./dist/'))
-});
+		.pipe(gulp.dest('./dist/'));
+}
 
-gulp.task('webserver', function () {
-	gulp.src('./dist/')
+// Webserver
+function webserverTask() {
+	return gulp.src('./dist/')
 		.pipe(webserver({
 			livereload: true,
 			open: true,
 			port: 7474
 		}));
-});
+}
 
-gulp.task('watch', function () {
-	gulp.watch(['./src/**.html', './src/*/**.html'], ["fileinclude"]);
-	gulp.watch(['./src/scss/**/*.scss'], ["scss"]);
-	gulp.watch(['./src/js/*.js'], ["beautify"]);
-});
+// Watch
+function watchTask() {
+	gulp.watch(['./src/**.html', './src/*/**.html'], gulp.series(fileincludeTask));
+	gulp.watch(['./src/scss/**/*.scss'], gulp.series(scssTask));
+	gulp.watch(['./src/js/*.js'], gulp.series(beautifyTask));
+}
+
+
+// Default (Gulp 4)
+exports.default = gulp.series(
+	fileincludeTask,
+	beautifyTask,
+	gulp.parallel(watchTask, webserverTask)
+);
+
+// 개별 실행 가능하도록 export
+exports.scss = scssTask;
+exports.htmlbeautify = htmlbeautifyTask;
+exports.jshint = jshintTask;
+exports.beautify = beautifyTask;
+exports.fileinclude = fileincludeTask;
+/* exports.webserver = webserverTask; */
+exports.watch = watchTask;
