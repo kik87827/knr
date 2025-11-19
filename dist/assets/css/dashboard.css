@@ -584,42 +584,56 @@ display:flex; justify-content: center; align-items: center;
 .count_chips_obj dd{font-size:12px;color:#478CEC; font-weight:700;}
 /* // 251118 */
 /* 251119 */
-.report_board_box{}
-.report_board_list{}
-.report_board_list > li{}
-.report_board_item{}
+.report_board_box{border:1px solid #304060;border-radius: 10px; box-sizing: border-box; min-height:100%; position:relative;overflow-y:auto;}
+.report_board_box::-webkit-scrollbar {width: 3px;background:#191E2D;}
+.report_board_box::-webkit-scrollbar-thumb {background-color: #478CEC;border-radius: 10px;background-clip: padding-box;}
+.report_board_box::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 5px transparent;}
+.report_board_list,
+.report_board_list > li{list-style: none;margin:0;padding:0;}
+.report_board_list{display:flex; flex-wrap:wrap;}
+.report_board_list > li{flex:0 0 50%; width:50%; box-sizing: border-box;border-bottom:1px solid #304060; border-right:1px solid #304060}
+.report_board_list > li:nth-of-type(2n){border-right:0;}
+.report_board_item{text-decoration: none;display:block;padding:15px;}
 .report_board_obj,
 .report_board_obj dt,
-.report_board_obj dd{}
-.report_board_obj{}
-.report_board_obj dt{}
-.report_board_obj dd{}
+.report_board_obj dd{list-style: none;margin:0;padding:0;}
+.report_board_obj{display:flex; align-items: center; gap:10px; position:relative; top:-1px;}
+.report_board_obj dt{flex:1;min-width:0;}
+.report_board_obj dd{flex:0;text-align: right;white-space: nowrap;}
 .report_board_obj dt,
 .report_board_obj dd{}
-.report_board_obj .rb_key{}
-.report_board_obj .rb_value{}
+.report_board_obj .rb_key,
+.report_board_obj .rb_value{display:block;}
+.report_board_obj .rb_key{font-size:12px; color:#ADB8DF; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all;}
+.report_board_obj .rb_value{font-size:14px; font-weight:700; color:#fff; font-weight:700; white-space: nowrap;}
 .data_sheet_wrap{}
-.data_sheet{}
-.data_sheet thead th{}
-.data_sheet thead th:last-of-type{}
-.data_sheet tbody td{}
-.data_sheet tbody td.marking{}
+.data_sheet{width:100%; border-collapse: collapse;}
+.data_sheet thead th{background:#1D2239;border-right:1px solid #304060; border-bottom:1px solid #304060; border-top:1px solid #304060;  padding:9px 12px; font-size:0;;line-height:1;}
+.data_sheet thead th:last-of-type{border-right:0;}
+.data_sheet tbody td{border-right:1px solid #304060;border-bottom:1px solid #304060;padding:17px 10px;}
+.data_sheet tbody td.marking{
+background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
+}
 .data_sheet tbody td.marking .data_word_score .number_node,
-.data_sheet tbody td.marking .data_word_score .unit_node{}
+.data_sheet tbody td.marking .data_word_score .unit_node{font-weight:700;}
 .data_sheet tbody td.marking .data_word_score .number_node{}
 .data_sheet tbody td.marking .data_word_score .unit_node{}
-.data_sheet tbody td:last-of-type{}
-.data_word_score{}
+.data_sheet tbody td:last-of-type{border-right:0;}
+.data_sheet_thtext{display:inline-block; font-size:12px; color:#fff;}
+.data_word_score{display:flex; align-items: flex-end; white-space: nowrap; justify-content: center; gap:4px;}
+.data_word_score .number_node,
+.data_word_score .unit_node{color:#fff; font-size:12px;}
 .data_word_score .number_node{}
 .data_word_score .unit_node{}
 .status_map_zone{position:relative; overflow:hidden; border-radius: 10px; background:#1D2239;}
 .status_map_zone .bg_img{}
 .status_map_zone .bg_img img{max-width:100%;}
-.status_legend_layer{}
+.status_legend_layer{position:absolute;bottom:24px; right:24px; background:#242A41; border-radius: 10px; overflow:  hidden; min-width:190px; box-sizing: border-box;}
 .status_legend_list,
-.status_legend_list > li{}
+.status_legend_list > li{margin:0;padding:0;list-style: none;}
 .status_legend_list{}
-.status_legend_list > li{}
+.status_legend_list > li{border-bottom:1px solid #304060;}
+.status_legend_list > li:last-of-type{border-bottom:0;}
 .status_legend_obj,
 .status_legend_obj dt,
 .status_legend_obj dd{}
