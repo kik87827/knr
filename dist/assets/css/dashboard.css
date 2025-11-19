@@ -628,7 +628,7 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .status_map_zone{position:relative; overflow:hidden; border-radius: 10px; background:#1D2239;}
 .status_map_zone .bg_img{}
 .status_map_zone .bg_img img{max-width:100%;}
-.status_legend_layer{position:absolute;bottom:24px; right:24px; background:#242A41; border-radius: 10px; overflow:  hidden; min-width:190px; box-sizing: border-box;}
+.status_legend_layer{position:absolute;bottom:24px; right:24px; background:#242A41; border-radius: 10px; overflow:  hidden; min-width:190px; box-sizing: border-box; }
 .status_legend_list,
 .status_legend_list > li{margin:0;padding:0;list-style: none;}
 .status_legend_list{}
