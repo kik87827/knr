@@ -1729,10 +1729,10 @@
       document.addEventListener("DOMContentLoaded", () => {
         mapEvent();
         entryListHover();
-        mirrorHeightStyle([".entry_status_container"]);
       });
       window.addEventListener("load", () => {
         mirrorMaxStyle();
+        mirrorHeightStyle([".entry_status_container"]);
       });
       function mirrorMaxStyle() {
         const legend_dom_list = document.querySelectorAll(".info_graphic_cols .legend_dom_list");

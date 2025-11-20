@@ -100,7 +100,7 @@
                         <p class="brick_title_note">구간별 금일 공종현황 입니다.</p>
                       </div>
                     </div>
-                    <div class="brick_contents">
+                    <div class="brick_contents has_scroll">
                       <div class="report_board_box">
                         <ul class="report_board_list">
                           <li>
@@ -359,7 +359,14 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="status_pos_layer" style="top: 210px; left: 143px">
+                      <!-- 
+                        ✅ 계산 방식
+
+                        top% = (top px / 부모 높이 507) * 100
+
+                        left% = (left px / 부모 너비 660) * 100
+                      -->
+                      <div class="status_pos_layer" style="top: 56.82%; left: 29.7%">
                         <div class="marker_img">
                           <img src="./assets/images/area/ico_white_marker.svg" alt="" />
                         </div>
@@ -370,7 +377,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="status_pos_layer" style="top: 94px; left: 292px">
+                      <div class="status_pos_layer" style="top: 33.75%; left: 51.67%">
                         <div class="marker_img">
                           <img src="./assets/images/area/ico_white_marker.svg" alt="" />
                         </div>
@@ -381,12 +388,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="status_pos_layer" style="top: 94px; left: 292px">
+                      <div class="status_pos_layer" style="top: 54.04%; left: 46.52%">
                         <div class="marker_img">
                           <img src="./assets/images/area/ico_white_marker.svg" alt="" />
                         </div>
                         <div class="pos_balloon">
-                          <div class="pos_text_box"><span class="text_node">2명</span></div>
+                          <div class="pos_text_box"><span class="text_node">3명</span></div>
                           <div class="pos_pointer">
                             <img src="./assets/images/area/pos_ballon_pointer.svg" alt="" />
                           </div>
@@ -399,7 +406,7 @@
             </div>
           </div>
           <div class="dashboard_sub_cols">
-            <div class="brick_box">
+            <div class="brick_box fixed_basis">
               <div class="brick_title_row">
                 <p class="brick_title">근로자 출역 현황</p>
                 <div class="else_cols_wrap">
@@ -472,7 +479,7 @@
                           <div class="work_caption_data">
                             <ul class="work_caption_list">
                               <li><strong class="work_caption_main">아티차트</strong></li>
-                              <li><span class="work_caption_info">㈜동부건설</span></li>
+                              <li class="liquid"><span class="work_caption_info">㈜동부건설</span></li>
                             </ul>
                           </div>
                         </li>
@@ -486,7 +493,7 @@
                           <div class="work_caption_data">
                             <ul class="work_caption_list">
                               <li><strong class="work_caption_main">문근기</strong></li>
-                              <li><span class="work_caption_info">㈜코오롱건설</span></li>
+                              <li class="liquid"><span class="work_caption_info">㈜코오롱건설</span></li>
                             </ul>
                           </div>
                         </li>
@@ -500,7 +507,7 @@
                           <div class="work_caption_data">
                             <ul class="work_caption_list">
                               <li><strong class="work_caption_main">카르멜리타</strong></li>
-                              <li><span class="work_caption_info">㈜에스케이네에스케이네</span></li>
+                              <li class="liquid"><span class="work_caption_info">㈜에스케이네에스케이네</span></li>
                             </ul>
                           </div>
                         </li>
@@ -514,7 +521,7 @@
                           <div class="work_caption_data">
                             <ul class="work_caption_list">
                               <li><strong class="work_caption_main">아티차트</strong></li>
-                              <li><span class="work_caption_info">㈜동부건설</span></li>
+                              <li class="liquid"><span class="work_caption_info">㈜동부건설</span></li>
                             </ul>
                           </div>
                         </li>
@@ -528,7 +535,77 @@
                           <div class="work_caption_data">
                             <ul class="work_caption_list">
                               <li><strong class="work_caption_main">앙헬리타</strong></li>
-                              <li><span class="work_caption_info">㈜동부건설</span></li>
+                              <li class="liquid"><span class="work_caption_info">㈜동부건설</span></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="work_check_form">
+                            <button class="btn_check_role">신규</button>
+                            <button class="btn_check_role active">질환</button>
+                            <button class="btn_check_role">고령</button>
+                            <button class="btn_check_role">외국인</button>
+                          </div>
+                          <div class="work_caption_data">
+                            <ul class="work_caption_list">
+                              <li><strong class="work_caption_main">아티차트</strong></li>
+                              <li class="liquid"><span class="work_caption_info">㈜동부건설</span></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="work_check_form">
+                            <button class="btn_check_role active">신규</button>
+                            <button class="btn_check_role">질환</button>
+                            <button class="btn_check_role">고령</button>
+                            <button class="btn_check_role">외국인</button>
+                          </div>
+                          <div class="work_caption_data">
+                            <ul class="work_caption_list">
+                              <li><strong class="work_caption_main">문근기</strong></li>
+                              <li class="liquid"><span class="work_caption_info">㈜코오롱건설</span></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="work_check_form">
+                            <button class="btn_check_role">신규</button>
+                            <button class="btn_check_role">질환</button>
+                            <button class="btn_check_role">고령</button>
+                            <button class="btn_check_role active">외국인</button>
+                          </div>
+                          <div class="work_caption_data">
+                            <ul class="work_caption_list">
+                              <li><strong class="work_caption_main">카르멜리타</strong></li>
+                              <li class="liquid"><span class="work_caption_info">㈜에스케이네에스케이네</span></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="work_check_form">
+                            <button class="btn_check_role">신규</button>
+                            <button class="btn_check_role active">질환</button>
+                            <button class="btn_check_role active">고령</button>
+                            <button class="btn_check_role">외국인</button>
+                          </div>
+                          <div class="work_caption_data">
+                            <ul class="work_caption_list">
+                              <li><strong class="work_caption_main">아티차트</strong></li>
+                              <li class="liquid"><span class="work_caption_info">㈜동부건설</span></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="work_check_form">
+                            <button class="btn_check_role">신규</button>
+                            <button class="btn_check_role">질환</button>
+                            <button class="btn_check_role">고령</button>
+                            <button class="btn_check_role active">외국인</button>
+                          </div>
+                          <div class="work_caption_data">
+                            <ul class="work_caption_list">
+                              <li><strong class="work_caption_main">앙헬리타</strong></li>
+                              <li class="liquid"><span class="work_caption_info">㈜동부건설</span></li>
                             </ul>
                           </div>
                         </li>
@@ -543,7 +620,7 @@
                 <div class="brick_title_row">
                   <p class="brick_title">위험 작업 현황</p>
                 </div>
-                <div class="brick_contents">
+                <div class="brick_contents has_scroll">
                   <div class="entry_status_container">
                     <div class="entry_intro_row">
                       <div class="entry_intro_item">
@@ -1207,7 +1284,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="brick_contents">
+                <div class="brick_contents has_scroll">
                   <div class="plate_card_wrap">
                     <div class="plate_card">
                       <div class="title_row">
@@ -1294,10 +1371,10 @@
                               </div>
                             </li>
                             <li>
-                              <div class="mark_info_item theme_green highlight">
+                              <div class="mark_info_item theme_orange highlight">
                                 <div class="img_row"><img src="./assets/images/area/mark_img_gas_care_orange.png" alt="" /></div>
                                 <div class="spec_row">
-                                  <p class="mark_info_text orange">
+                                  <p class="mark_info_text">
                                     용대터널 입구
                                     <br />
                                     좌측1번째
@@ -1397,7 +1474,7 @@
                               <div class="mark_info_item theme_orange highlight">
                                 <div class="img_row"><img src="./assets/images/area/mark_img_gas_care_orange.png" alt="" /></div>
                                 <div class="spec_row">
-                                  <p class="mark_info_text orange">
+                                  <p class="mark_info_text">
                                     용대터널 입구
                                     <br />
                                     좌측1번째
@@ -1422,9 +1499,10 @@
       document.addEventListener("DOMContentLoaded", () => {
         entryListHover();
         swiperTextFunc();
-        mirrorHeightStyle([".entry_status_container"]);
       });
-      window.addEventListener("load", () => {});
+      window.addEventListener("load", () => {
+        mirrorHeightStyle([".report_board_box", ".entry_status_container", ".plate_card_wrap"]);
+      });
 
       function mirrorHeightStyle(selectorArray) {
         if (!Array.isArray(selectorArray)) return;
