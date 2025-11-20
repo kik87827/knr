@@ -196,7 +196,7 @@ select.dash_select:disabled + .ico_arrow{opacity:.4;}
 .mark_legend_item .text_node{display:inline-block; font-size:12px; line-height:1; position:relative; top:-1px;}
 /* // 251118 */
 .brick_contents{flex:1;min-height:0;}
-.brick_contents.has_scroll{position:relative;}
+.brick_contents.has_scroll{position:relative; min-height:100px;}
 .brick_box.liquid{flex:1;}
 .brick_box.liquid .brick_title_row{}
 .brick_box.liquid .brick_title{}
@@ -651,9 +651,9 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .status_legend_score{white-space: nowrap;}
 .status_legend_value{}
 .status_legend_unit{}
-.status_pos_layer{position:absolute;width:32px;height:47px; text-align: center;}
+.status_pos_layer{position:absolute;width:4.84848484848485%;height:9.27021696252465%; text-align: center;}
 .status_pos_layer .marker_img{}
-.status_pos_layer .marker_img img{vertical-align: top;}
+.status_pos_layer .marker_img img{vertical-align: top;width:100%;}
 .status_pos_layer .pos_balloon{position:absolute;bottom:calc(100% + 14px);left:50%; transform: translateX(-50%); white-space: nowrap;}
 .status_pos_layer .pos_pointer{position:absolute;top:100%;left:50%;transform: translateX(-50%);}
 .status_pos_layer .pos_pointer img{vertical-align: top;}
@@ -713,6 +713,36 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .mark_info_grid .mark_info_item{}
 /* // 251119 */
 
+/* 251121 */
+.geo_chart_zone{position:relative;}
+.geo_chart_zone img{width:1081px;vertical-align: top;}
+.geo_draw_wrap{overflow:hidden;position:absolute;left:45px;bottom:40.5px;width:calc(100% - 55px);height:calc(100% - 40.5px); display:flex;box-sizing: border-box; border-left:1px solid #304060; border-bottom:1px solid #304060;}
+.geo_draw_area{position:relative}
+.geo_draw_area img{height:237px;width:auto;}
+.geo_draw_area img.default{}
+.geo_draw_area img.hover{display:none;}
+.geo_draw_area.hit_item{position:relative;z-index:1;}
+.geo_draw_area.hit_item.active img.hover,
+.geo_draw_area.hit_item:hover img.hover{display:block;}
+.geo_draw_area.hit_item.active img.default,
+.geo_draw_area.hit_item:hover img.default{display:none;}
+.geo_draw_area.hit_item.active .geo_text_node,
+.geo_draw_area.hit_item:hover .geo_text_node{background-position:0 100%;}
+.geo_draw_area.hit_item.active .geo_text_node .text_cont,
+.geo_draw_area.hit_item:hover .geo_text_node .text_cont{color:#ddd; opacity:1; font-weight:500;}
+
+.geo_draw_area.hit_item.hit_area_01 .geo_text_node{top:63%;}
+.geo_draw_area.hit_item.hit_area_02 .geo_text_node{top:60%;}
+.geo_draw_area.hit_item.hit_area_03 .geo_text_node{top:55%;}
+.geo_draw_area.hit_item.hit_area_04 .geo_text_node{top:49%;}
+.geo_draw_area.hit_item.hit_area_05 .geo_text_node{top:45%;}
+.geo_draw_area.hit_item.hit_area_06 .geo_text_node{top:42%;}
+.geo_draw_area.hit_item.hit_area_07 .geo_text_node{top:66%;transform: translateX(0);left:10px;}
+
+.geo_text_node{display:flex;width:70px;height:45px; text-align: center; justify-content: center; align-items: center;  background:url("../images/area/bg_geo_text_node.png") no-repeat 0 0/100% auto; position:absolute; top:0; left:50%; transform: translateX(-50%);}
+.geo_text_node .text_cont{display:inline-block;font-size:12px; position:relative; top:-1px; color:#fff; opacity: 0.5; }
+/* // 251121 */
+
 @media (max-width:1900px){
     .dashboard_container.outline_type2 .dashboard_main_cols{flex-basis:60.15037593984962%;}
     .dashboard_main_cols{flex-basis: 920px;}
@@ -747,6 +777,17 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
     .line_num5 .sec_highlight{top:18px;}
     .line_num6 .sec_highlight{top:-6px;}
     .line_num8 .sec_highlight{top:-2px;}
+
+    /* 251121 */
+    .geo_chart_zone{}
+    .geo_chart_zone img{width:100%;}
+    .geo_draw_wrap{left:4.1628%;bottom:14.6209%;width: 94.91%;height: 85.3791%;}
+    .geo_draw_area img{height:auto;}
+    /* // 251121 */
+
+    .mark_info_text br{display:none;}
+    .geo_text_node{width:46.6667px;height:30px;}
+    .geo_text_node .text_cont{font-size:10px;}
 }
 @media (max-width:1800px){
     .info_graphic_cell{flex-basis: 65%;}
