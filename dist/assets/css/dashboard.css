@@ -731,15 +731,19 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .geo_draw_area.hit_item.active .geo_text_node .text_cont,
 .geo_draw_area.hit_item:hover .geo_text_node .text_cont{color:#ddd; opacity:1; font-weight:500;}
 
-.geo_draw_area.hit_item.hit_area_01 .geo_text_node{top:63%;}
+/* .geo_draw_area.hit_item.hit_area_01 .geo_text_node{top:63%;}
 .geo_draw_area.hit_item.hit_area_02 .geo_text_node{top:60%;}
 .geo_draw_area.hit_item.hit_area_03 .geo_text_node{top:55%;}
 .geo_draw_area.hit_item.hit_area_04 .geo_text_node{top:49%;}
 .geo_draw_area.hit_item.hit_area_05 .geo_text_node{top:45%;}
 .geo_draw_area.hit_item.hit_area_06 .geo_text_node{top:42%;}
-.geo_draw_area.hit_item.hit_area_07 .geo_text_node{top:66%;transform: translateX(0);left:10px;}
+.geo_draw_area.hit_item.hit_area_07 .geo_text_node{top:66%;transform: translateX(0);left:10px;} */
+
+.geo_text_node.xratio_reset{transform: translateX(0) !important;}
 
 .geo_text_node{display:flex;width:70px;height:45px; text-align: center; justify-content: center; align-items: center;  background:url("../images/area/bg_geo_text_node.png") no-repeat 0 0/100% auto; position:absolute; top:0; left:50%; transform: translateX(-50%);}
+.geo_text_node.worked{background-image:url("../images/area/bg_geo_text_node2.png")}
+.geo_text_node.worked .text_cont{ color:#ddd; opacity: 1; }
 .geo_text_node .text_cont{display:inline-block;font-size:12px; position:relative; top:-1px; color:#fff; opacity: 0.5; }
 /* // 251121 */
 
