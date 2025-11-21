@@ -513,8 +513,8 @@ display:flex; justify-content: center; align-items: center;
 
 /* 251115 */
 .entry_status_container{position:relative; display:flex; flex-direction: column;min-height:100%;}
-.entry_intro_row{display:flex; justify-content: center; align-items: center; background: linear-gradient(100.3deg, #6FB2D0 -4.93%, #4166B9 93.95%); border-radius: 10px 10px 0px 0px;}
-.entry_intro_item{display:flex;justify-content: center; align-items: center; gap:10px; padding:10px 14px;}
+.entry_intro_row{display:flex; justify-content: center; align-items: center; background: #478CEC; border-radius: 10px 10px 0px 0px;}
+.entry_intro_item{display:flex;justify-content: center; align-items: center; gap:10px; padding:5px 14px;}
 .entry_intro_item > .ico{flex:0 0 33px;width:33px; height:33px;justify-content: center; align-items: center; display:flex; background:#fff; border-radius:100%;font-size:0;line-height:0;}
 .entry_intro_item > .ico img{vertical-align: top;}
 .entry_intro_item > .text_group{color:#fff;font-weight:500; padding-bottom:5px;}
@@ -612,8 +612,8 @@ display:flex; justify-content: center; align-items: center;
 .report_board_obj .rb_key{font-size:12px; color:#ADB8DF; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all;}
 .report_board_obj .rb_value{font-size:14px; font-weight:700; color:#fff; font-weight:700; white-space: nowrap;}
 .data_sheet_wrap{}
-.data_sheet{width:100%; border-collapse: collapse;}
-.data_sheet thead th{background:#1D2239;border-right:1px solid #304060; border-bottom:1px solid #304060; border-top:1px solid #304060;  padding:9px 12px; font-size:0;;line-height:1;}
+.data_sheet{width:100%; border-collapse: collapse; table-layout: fixed;}
+.data_sheet thead th{background:#1D2239;border-right:1px solid #304060; border-bottom:1px solid #304060; border-top:1px solid #304060;  padding:9px 0; font-size:0;;line-height:1;}
 .data_sheet thead th:last-of-type{border-right:0;}
 .data_sheet tbody td{border-right:1px solid #304060;border-bottom:1px solid #304060;padding:17px 10px;}
 .data_sheet tbody td.marking{
@@ -624,7 +624,7 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .data_sheet tbody td.marking .data_word_score .number_node{}
 .data_sheet tbody td.marking .data_word_score .unit_node{}
 .data_sheet tbody td:last-of-type{border-right:0;}
-.data_sheet_thtext{display:inline-block; font-size:12px; color:#fff;}
+.data_sheet_thtext{display:inline-block; font-size:12px; color:#ADB8DF; font-weight:400;}
 .data_word_score{display:flex; align-items: flex-end; white-space: nowrap; justify-content: center; gap:4px;}
 .data_word_score .number_node,
 .data_word_score .unit_node{color:#fff; font-size:12px;}
@@ -685,7 +685,7 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .work_check_list > li{display:flex;gap:16px; align-items: center;margin:0 0 16px 0;}
 .work_check_list > li:last-of-type{margin-bottom:0;}
 .work_check_form{flex:0 0 59.24%;display:flex;gap:6px;}
-.btn_check_role{flex:1; height:24px; white-space: nowrap; line-height:24px; cursor: pointer; text-align: center;  appearance: none;border:0;margin:0;padding:0;background:#2D3B56;border-radius: 100px; font-size:11px; color:rgba(255,255,255,.2);}
+.btn_check_role{flex:1; height:24px; white-space: nowrap;font-family: 'Noto Sans KR'; line-height:24px; cursor: pointer; text-align: center;  appearance: none;border:0;margin:0;padding:0;background:#2D3B56;border-radius: 100px; font-size:11px; color:rgba(255,255,255,.2);}
 .btn_check_role:hover,
 .btn_check_role.active{background:#478CEC; color:#fff;}
 .work_caption_data{flex:1;white-space: nowrap;min-width:0;}
@@ -721,7 +721,7 @@ background: linear-gradient(137.32deg, #E04248 23.57%, #BA1B1B 104.13%);
 .geo_draw_area img{height:237px;width:auto;}
 .geo_draw_area img.default{}
 .geo_draw_area img.hover{display:none;}
-.geo_draw_area.hit_item{position:relative;z-index:1;}
+.geo_draw_area.hit_item{position:relative;z-index:1; cursor: pointer;}
 .geo_draw_area.hit_item.active img.hover,
 .geo_draw_area.hit_item:hover img.hover{display:block;}
 .geo_draw_area.hit_item.active img.default,
