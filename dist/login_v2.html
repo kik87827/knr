@@ -56,7 +56,8 @@
 								<div class="feed_input_wrap">
 									<input type="password" class="feed_input" placeholder="비밀번호를 입력하세요" />
 									<div class="feed_else_cols">
-										<button class="button_role shape_eye"></button>
+										<button class="button_role open active"><img src="./assets/images/login/ico_form_eye.png" alt="" /></button>
+										<button class="button_role close"><img src="./assets/images/login/ico_form_eye_close.png" alt="" /></button>
 									</div>
 								</div>
 							</div>
@@ -83,6 +84,32 @@
 		</div>
 	</div>
 	<!-- // login -->
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll(".feed_input_wrap").forEach((feedform) => {
+				const eyebtn = feedform.querySelector(".button_role.open");
+				const eyeClosebtn = feedform.querySelector(".button_role.close");
+				const feed_input = feedform.querySelector(".feed_input");
+				// 비번
+				if (!!eyebtn) {
+					eyebtn.addEventListener("click", (e) => {
+						const etarget = e.currentTarget;
+						etarget.classList.remove("active");
+						eyeClosebtn.classList.add("active");
+						feed_input.setAttribute("type", "text");
+					});
+				}
+				if (!!eyeClosebtn) {
+					eyeClosebtn.addEventListener("click", (e) => {
+						const etarget = e.currentTarget;
+						etarget.classList.remove("active");
+						eyebtn.classList.add("active");
+						feed_input.setAttribute("type", "password");
+					});
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
