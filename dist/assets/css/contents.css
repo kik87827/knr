@@ -462,4 +462,47 @@ outline-offset: -5px;
 .context_value_number{font-size:14px; color:#222222; font-weight:700;}
 .context_value_unit{font-size:12px; color:#999999;}
 /* // 251126 */
+/* 251128 */
+.entrance_page{}
+.entrance_img_cols{}
+.entrance_img_cols .bg_img{}
+.entrance_img_cols .bg_img img{}
+.entrance_catchphrase_group{}
+.entrance_catchphrase_group .sub_catchphrase{}
+.entrance_catchphrase_group .main_catchphrase{}
+.entrance_form_cols{}
+.entrance_form_cluster{}
+.entrance_form_cluster .top_items{}
+.entrance_form_cluster .logo_row{}
+.entrance_form_cluster .logo_row img{}
+.entrance_form_cluster .title_row{}
+.entrance_form_cluster .main_title{}
+.entrance_form_cluster .sub_title_copy{}
+.entrance_form_cluster .middle_items{}
+.entrance_form_group{}
+.entrance_form_block{}
+.entrance_form_block:last-of-type{}
+.entrance_form_block .label_row{}
+.entrance_form_block .label_text_node{}
+.entrance_form_block .form_row{}
+.feed_input_wrap{}
+input.feed_input{}
+input.feed_input::placeholder{}
+.feed_else_cols{}
+.button_role{}
+.button_role.active{}
+.button_role.shape_eye{}
+.button_role.shape_eye.active{}
+.entrance_btn_wrap{}
+.btn_request_box{}
+.btn_request_box .text_node{}
+.entrance_etc_wrap{}
+.menu_piece_list{}
+.menu_piece_list > li{}
+.menu_piece_list > li:after{}
+.menu_piece_list > li:last-of-type{}
+.menu_piece_list > li:last-of-type:after{}
+.menu_piece_item{}
+.entrance_bottom_copy{}
+/* // 251128 */
 /* // contents */
