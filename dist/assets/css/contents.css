@@ -499,7 +499,7 @@ input.feed_input::placeholder{color:#999999;}
 .button_role.shape_eye{}
 .button_role.shape_eye.active{}
 .entrance_btn_wrap{margin-top:40px;}
-.btn_request_box{display:flex; border-radius: 10px; justify-content: center; align-items: center; min-height:50px; background:#1A75FF; appearance: none;}
+.btn_request_box{display:flex; border-radius: 10px; justify-content: center; align-items: center; min-height:50px; background:#1A75FF; appearance: none; text-decoration: none;}
 .btn_request_box .text_node{color:#fff; font-size:16px; font-weight:500; }
 .entrance_etc_wrap{margin-top:20px;}
 .menu_piece_list,
